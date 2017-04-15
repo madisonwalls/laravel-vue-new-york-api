@@ -1,23 +1,37 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Example Component</div>
+  <div class="container">
+    <h4>Test</h4>
 
-                    <div class="panel-body">
-                        I'm an example component!
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+  </div>
 </template>
 
 <script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
+import axios from 'axios';
+
+
+export default {
+  components: {
+
+  },
+
+  data () {
+    return {
+
     }
+  },
+
+  mounted () {
+
+  },
+
+  methods: {
+
+  }
+}
 </script>
+
+<style>
+
+
+</style>
