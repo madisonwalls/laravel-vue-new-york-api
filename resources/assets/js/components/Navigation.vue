@@ -68,7 +68,7 @@ export default {
   padding: 60px 0px 0px 0px;
   font-family: Source Sans Pro;
   font-size: 20px;
-  background-color: #433A3F;
+  background-color: #6B3251;
   color: #FFFFFF;
 }
 

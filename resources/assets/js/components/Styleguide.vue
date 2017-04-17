@@ -3,14 +3,14 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 style-title">
-        <h1>Style Guide</h1>
+        <h2>Style Guide</h2>
       </div>
       </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <h1>Colors</h1>
+      <div class="col-md-4 category">
+        <h2>Colors</h2>
       </div>
       <div class="col-md-8">
       <div class="color1"><p>Mint #CAE4DB</p></div>
@@ -21,8 +21,8 @@
       <div class="color5"><p>Bluebell #0088a8</p></div>
       <div class="color6"><p>Jeans #00303f</p></div>
       </br>
-      <div class="color7"><p>Sun #DBC179</p></div>
-      <div class="color8"><p>Mustard #DCAE1D</p></div>
+      <div class="color7"><p>Berry #DBC179</p></div>
+      <div class="color8"><p>Wine #DCAE1D</p></div>
       <div class="color9"><p>Antique #BA8900</p></div>
       </br>
       <div class="color10"><p>Clean #ffffff</p></div>
@@ -33,41 +33,83 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <h1>Typography</h1>
+      <div class="col-md-4 category">
+        <h2>Typography</h2>
       </div>
-      <div class="col-md-8">
-        <p>box</p>
+      <div class="col-md-8 text">
+        <p class="font-thin">Source Sans Pro Thin</p>
+        <p class="font-regular">Source Sans Pro Regular</p>
+        <p class="font-bold">Source Sans Pro Bold</p>
+        <h1 class="main-header">Main Header - Poire Tone Regular</h1>
+        <h2 class="stand-out-header">Stand Out Header - Source Sans Pro Thin</h2>
+
+        <h1>Heading 1 - Poire Tone Regular</h1>
+        <h2>Heading 2 - Source Sans Pro</h2>
+        <h3>Heading 3 - Source Sans Pro</h3>
+        <h4>Heading 4 - Source Sans Pro</h4>
+        <h5>Heading 5 - Source Sans Pro</h5>
+        <h6>Heading 6 - Source Sans Pro</h6>
+      <p class="paragraphs">Paragraph Text</p>
+      <p class="paragraphs">This website lets you store information about the restaurants you've visited in New York City. Making it easier to recontact them or to check what restaurants you haven't tried yet.</p>
+      <p class="paragraphs">The benefits of this application are endless, and the style is sleek and clean with an inviting color scheme.</p>
+      <p class="light-text">p.light-text</p>
+      <p class="light-text">This website lets you store information about the restaurants you've visited in New York City. Making it easier to recontact them or to check what restaurants you haven't tried yet.</p>
+      <p class="light-text">The benefits of this application are endless, and the style is sleek and clean with an inviting color scheme.</p>
+      <p class="lead-text">p.lead-text</p>
+      <p class="lead-text">This website lets you store information about the restaurants you've visited in New York City. Making it easier to recontact them or to check what restaurants you haven't tried yet.</p>
+      <p class="lead-text">The benefits of this application are endless, and the style is sleek and clean with an inviting color scheme.</p>
       </div>
       </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <h1>Buttons</h1>
+      <div class="col-md-4 category">
+        <h2>Buttons</h2>
       </div>
       <div class="col-md-8">
-        <p>box</p>
+        <button type="button" name="button" class="smallButton">Small Button</button>
+        <button type="button" name="button" class="regularButton">Regular Button</button>
+        <button type="button" name="button" class="largeButton">Large Button</button>
+        <button type="button" name="button" class="deleteButton">Delete Button</button>
       </div>
       </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <h1>Lists</h1>
+      <div class="col-md-4 category">
+        <h2>Lists</h2>
       </div>
       <div class="col-md-8">
-        <p>box</p>
+        <ul>
+       <li>This is an example of a list item.</li>
+       <li>Another chance to see what a list item looks like.</li>
+       <li>For example purposes, here is a list item.</li>
+       <li>This is the styleguide for a New York Restaurant Website.</li>
+       <li>Here is the last example on this list.</li>
+    </ul>
+    <ol>
+      <li>This is an example of a list item.</li>
+      <li>Another chance to see what a list item looks like.</li>
+      <li>For example purposes, here is a list item.</li>
+      <li>This is the styleguide for a New York Restaurant Website.</li>
+      <li>Here is the last example on this list.</li>
+    </ol>
       </div>
       </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <h1>Inputs</h1>
+      <div class="col-md-4 category">
+        <h2>Inputs</h2>
       </div>
       <div class="col-md-8">
-        <p>box</p>
+        <input class="inputField" type="text" name="" value="" placeholder="Example Input Field">
+       <textarea class="textareaInput" type="text" name="" value="" placeholder="Example Text Area Field"></textarea>
+       <select class="selectInput" type="text" name="" value="">
+         <option value="Example 1">Example 1</option>
+         <option value="Example 2">Example 2</option>
+         <option value="Example 3">Example 3</option>
+       </select>
       </div>
       </div>
   </div>
@@ -107,7 +149,7 @@ export default {
 }
 
 
- .style-title h1 {
+ .style-title h2 {
    font-family: NewYork;
    margin-top: 50px;
    margin-bottom: 70px;
@@ -200,7 +242,7 @@ export default {
 
 .color9 {
   margin-bottom: 40px;
-  background-color: #433A3F;
+  background-color: #6D336A;
   width: 100px;
   height: 100px;
   display: inline-block;
@@ -229,6 +271,48 @@ export default {
   width: 100px;
   height: 100px;
   display: inline-block;
+}
+
+.category h2 {
+  font-family: source sans pro;
+  font-weight: lighter;
+  color: #3FA7D3;
+}
+
+.font-thin {
+  font-family: source sans pro;
+  font-weight: lighter;
+  font-size: 28px;
+}
+
+.font-regular {
+  font-family: source sans pro;
+  font-size: 28px;
+}
+
+.font-bold {
+  font-family: source sans pro;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.main-header  {
+  font-family: NewYork;
+  font-size: 50px;
+}
+
+.stand-out-header {
+  font-family: source sans pro;
+  font-weight: lighter;
+  color: #3FA7D3;
+}
+
+.text h1 {
+  font-family: NewYork;
+}
+
+.text h2, .text h3, .text h4, .text h5, .text h6 {
+  font-family: source sans pro;
 }
 
 </style>
