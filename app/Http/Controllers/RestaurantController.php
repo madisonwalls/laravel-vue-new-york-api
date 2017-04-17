@@ -12,8 +12,8 @@ class RestaurantController extends Controller
     {
       //list
       //GET /Restaurants
-      $Restaurants = Restaurant::all();
-      return Response::json($Restaurants);
+      $restaurants = Restaurant::all();
+      return Response::json($restaurants);
     }
 
     public function create (Request $request)

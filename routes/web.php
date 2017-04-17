@@ -13,15 +13,13 @@
 
 use Illuminate\Http\Request;
 
-
-Route::get('/nightlifes', 'NightlifeController@index');
-Route::post('/nightlifes', 'NightlifeController@create');
-
-Route::get('/nightlifes/{id}', 'NightlifeController@show');
-Route::put('/nightlifes/{id}', 'NightlifeController@update');
-Route::delete('/nightlifes/{id}', 'NightlifeController@destroy');
-
-
 Route::get('/', function () {
     return view('app');
 });
+
+
+Route::get('/restaurants', 'RestaurantController@index');
+Route::post('/restaurants', 'RestaurantController@create');
+Route::get('/restaurants/{id}', 'RestaurantController@show');
+Route::put('/restaurants/{id}', 'RestaurantController@update');
+Route::delete('/restaurants/{id}', 'RestaurantController@destroy');

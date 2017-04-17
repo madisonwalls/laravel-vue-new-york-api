@@ -15,7 +15,6 @@ class CreateRestaurantTable extends Migration
     {
       Schema::create('restaurants', function(Blueprint $table) {
           $table->increments('id');
-          $table->string('type');
           $table->string('name');
           $table->string('address');
           $table->string('website');
@@ -25,7 +24,6 @@ class CreateRestaurantTable extends Migration
           $table->string('hours');
           $table->timestamps();
         });
-
     }
 
     /**
@@ -35,6 +33,6 @@ class CreateRestaurantTable extends Migration
      */
     public function down()
     {
-     Schema::dropIfExists('restaurants');
+      Schema::dropIfExists('restaurants');
     }
 }
