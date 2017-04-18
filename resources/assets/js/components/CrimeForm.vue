@@ -3,13 +3,14 @@
     <h1>Add New Crime</h1>
     <div class="row">
       <div class="form-inputs">
-        <input class="input-field" type="text" v-model="name" placeholder="Name" />
-        <input class="input-field" type="text" v-model="address" placeholder="Address"/>
-        <input class="input-field" type="text" v-model="website" placeholder="Website"/>
-        <input class="input-field" type="text" v-model="phone" placeholder="Phone"/>
-        <input class="input-field" type="text" v-model="cuisine" placeholder="Cuisine"/>
-        <input class="input-field" type="text" v-model="rating" placeholder="Rating"/>
-        <input class="input-field" type="text" v-model="hours" placeholder="Hours" />
+        <input class="input-field" type="text" v-model="charge" placeholder="Charged Crime" />
+        <input class="input-field" type="text" v-model="location" placeholder="Location"/>
+        <input class="input-field" type="text" v-model="year" placeholder="Year"/>
+        <input class="input-field" type="text" v-model="month" placeholder="Month"/>
+        <input class="input-field" type="text" v-model="suspect" placeholder="Suspect Name"/>
+        <input class="input-field" type="text" v-model="gender" placeholder="Gender"/>
+        <input class="input-field" type="text" v-model="age" placeholder="Age" />
+        <input class="input-field" type="text" v-model="notes" placeholder="Notes" />
         <button class="btn btn-primary" @click="create" :disabled="loading">Create</button>
       </div>
     </div>
@@ -30,13 +31,14 @@ export default {
 
   data () {
     return {
-      name: '',
-      address: '',
-      website: '',
-      phone: '',
-      cuisine: '',
-      rating: '',
-      hours: '',
+      charge: '',
+      location: '',
+      year: '',
+      month: '',
+      suspect: '',
+      gender: '',
+      age: '',
+      notes: '',
       loading: false
     }
   },
@@ -54,13 +56,14 @@ export default {
     },
     sendRequest () {
     axios.post('/crimes', {
-      name: this.name,
-      address: this.address,
-      website: this.website,
-      phone: this.phone,
-      cuisine: this.cuisine,
-      rating: this.rating,
-      hours: this.hours,
+      charge: this.charge,
+      location: this.location,
+      year: this.year,
+      month: this.month,
+      suspect: this.suspect,
+      gender: this.gender,
+      age: this.age,
+      notes: this.notes
     })
     .then((response) => {
       console.log('CrimeForm -> sendRequest success');
@@ -75,13 +78,14 @@ export default {
     });
   },
   reset () {
-      this.name = '';
-      this.address = '';
-      this.website = '';
-      this.phone = '';
-      this.cuisine = '';
-      this.rating = '';
-      this.hours = '';
+      this.charge = '';
+      this.location = '';
+      this.year = '';
+      this.month = '';
+      this.suspect = '';
+      this.gender = '';
+      this.age = '';
+      this.notes = '';
     }
   }
 }
@@ -107,7 +111,7 @@ export default {
 
 .form-inputs {
   margin: auto;
-  width: 50%;
+  width: 80%;
 }
 
 .form h1 {

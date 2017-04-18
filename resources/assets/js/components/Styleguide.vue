@@ -49,16 +49,16 @@
         <h4>Heading 4 - Source Sans Pro</h4>
         <h5>Heading 5 - Source Sans Pro</h5>
         <h6>Heading 6 - Source Sans Pro</h6>
-      <p class="paragraphs">Paragraph Text</p>
-      <p class="paragraphs">This website lets you store information about the restaurants you've visited in New York City. Making it easier to recontact them or to check what restaurants you haven't tried yet.</p>
-      <p class="paragraphs">The benefits of this application are endless, and the style is sleek and clean with an inviting color scheme.</p>
-      <p class="light-text">p.light-text</p>
-      <p class="light-text">This website lets you store information about the restaurants you've visited in New York City. Making it easier to recontact them or to check what restaurants you haven't tried yet.</p>
-      <p class="light-text">The benefits of this application are endless, and the style is sleek and clean with an inviting color scheme.</p>
-      <p class="lead-text">p.lead-text</p>
-      <p class="lead-text">This website lets you store information about the restaurants you've visited in New York City. Making it easier to recontact them or to check what restaurants you haven't tried yet.</p>
-      <p class="lead-text">The benefits of this application are endless, and the style is sleek and clean with an inviting color scheme.</p>
-      </div>
+          <p class="paragraphs">Paragraph Text</p>
+          <p class="paragraphs">This website lets you store information about the crimes you've visited in New York City. Making it easier to recontact them or to check what crimes you haven't tried yet.</p>
+          <p class="paragraphs">The benefits of this application are endless, and the style is sleek and clean with an inviting color scheme.</p>
+          <p class="light-text">p.light-text</p>
+          <p class="light-text">This website lets you store information about the crimes you've visited in New York City. Making it easier to recontact them or to check what crimes you haven't tried yet.</p>
+          <p class="light-text">The benefits of this application are endless, and the style is sleek and clean with an inviting color scheme.</p>
+          <p class="lead-text">p.lead-text</p>
+          <p class="lead-text">This website lets you store information about the crimes you've visited in New York City. Making it easier to recontact them or to check what crimes you haven't tried yet.</p>
+          <p class="lead-text">The benefits of this application are endless, and the style is sleek and clean with an inviting color scheme.</p>
+        </div>
       </div>
   </div>
   <div class="container">
@@ -84,14 +84,14 @@
        <li>This is an example of a list item.</li>
        <li>Another chance to see what a list item looks like.</li>
        <li>For example purposes, here is a list item.</li>
-       <li>This is the styleguide for a New York Restaurant Website.</li>
+       <li>This is the styleguide for a New York Crime Website.</li>
        <li>Here is the last example on this list.</li>
     </ul>
     <ol>
       <li>This is an example of a list item.</li>
       <li>Another chance to see what a list item looks like.</li>
       <li>For example purposes, here is a list item.</li>
-      <li>This is the styleguide for a New York Restaurant Website.</li>
+      <li>This is the styleguide for a New York Crime Website.</li>
       <li>Here is the last example on this list.</li>
     </ol>
       </div>
@@ -294,6 +294,7 @@ export default {
   font-family: source sans pro;
   font-weight: bold;
   font-size: 28px;
+  margin-bottom: 60px;
 }
 
 .main-header  {
@@ -305,6 +306,7 @@ export default {
   font-family: source sans pro;
   font-weight: lighter;
   color: #3FA7D3;
+  margin-bottom: 60px;
 }
 
 .text h1 {
@@ -313,6 +315,30 @@ export default {
 
 .text h2, .text h3, .text h4, .text h5, .text h6 {
   font-family: source sans pro;
+}
+
+.text h6 {
+    margin-bottom: 60px;
+}
+
+.paragraphs {
+  line-height: 1.5;
+  font-family: source sans pro;
+  font-size: 18px;
+}
+
+.light-text {
+  line-height: 1.5;
+  font-family: source sans pro;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.lead-text {
+  line-height: 1.5;
+  font-family: source sans pro;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 </style>

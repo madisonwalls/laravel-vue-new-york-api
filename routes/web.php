@@ -18,8 +18,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('/restaurants', 'RestaurantController@index');
-Route::post('/restaurants', 'RestaurantController@create');
-Route::get('/restaurants/{id}', 'RestaurantController@show');
-Route::put('/restaurants/{id}', 'RestaurantController@update');
-Route::delete('/restaurants/{id}', 'RestaurantController@destroy');
+Route::get('/crimes', 'CrimeController@index');
+Route::post('/crimes', 'CrimeController@create');
+Route::get('/crimes/{id}', 'CrimeController@show');
+Route::put('/crimes/{id}', 'CrimeController@update');
+Route::delete('/crimes/{id}', 'CrimeController@destroy');

@@ -1,27 +1,21 @@
 <template>
-  <div class="Contact panel panel-default">
-    <div class="panel-heading">
-      <a :href="'tel:' + contact.phone">
-        <i class="glyphicon glyphicon-earphone"></i>
-      </a>
-
-      <a class="tool" href="#" @click.prevent="remove">
-        <i class="glyphicon glyphicon-remove pull-right"></i>
-      </a>
-
+  <div class="Crime">
+    <div class="heading">
+      <h1>All Crimes</h1>
+      <a :href="crime.charge"></a>
       <a class="tool" href="#" @click.prevent="editing = true" v-show="!editing">
         <i class="glyphicon glyphicon-pencil pull-right"></i>
       </a>
     </div>
     <div class="panel-body">
       <div class="live" v-show="!editing">
-        {{ contact.first }} {{ contact.last }}
+        {{ crime.charge }} {{ crime.location }}
       </div>
       <div class="editing" v-show="editing">
         <p>
-          <input type="text" v-model="first" />
-          <input type="text" v-model="last" />
-          <input type="text" v-model="phone" />
+          <input type="text" v-model="charge" />
+          <input type="text" v-model="location" />
+          <input type="text" v-model="year" />
         </p>
         <p>
           <button class="btn btn-success" @click="save">Save</button>
@@ -38,14 +32,14 @@ import axios from 'axios';
 export default {
 
   props: [
-    'contact'
+    'crime'
   ],
 
   data () {
     return {
-      first: this.contact.first,
-      last: this.contact.last,
-      phone: this.contact.phone,
+      charge: this.crime.charge,
+      location: this.crime.location,
+      year: this.crime.year,
       editing: false,
       loading: false
     }
@@ -54,49 +48,50 @@ export default {
   methods: {
 
     remove () {
-      console.log('Contact -> remove');
+      console.log('Crime -> remove');
       this.loading = true;
-      axios.delete(`/contacts/${this.contact.id}`)
+      axios.delete(`/crimes/${this.crime.id}`)
         .then((response) => {
-          console.log('Contact -> remove success');
+          console.log('Crime -> remove success');
           this.$emit('deleted')
           this.loading = false;
         })
         .catch((error) => {
-          console.log('Contact -> remove error');
+          console.log('Crime -> remove error');
           // stop deleting and dont remove from the dom
           // tell the user deletion failed
+          // EDITTT
         });
     },
 
     save () {
-      console.log('Contact -> save');
-      axios.put(`/contacts/${this.contact.id}`, {
-          first: this.first,
-          last: this.last,
-          phone: this.phone
+      console.log('Crime -> save');
+      axios.put(`/crimes/${this.crime.id}`, {
+          charge: this.charge,
+          location: this.location,
+          year: this.year
         })
         .then((response) => {
-          console.log('Contact -> save success');
+          console.log('Crime -> save success');
           this.$emit('updated', {
-            contact: this.contact,
-            first: this.first,
-            last: this.last,
-            phone: this.phone
+            crime: this.crime,
+            charge: this.charge,
+            location: this.location,
+            year: this.year
           });
           this.editing = false;
         })
         .catch((error) => {
-          console.log('Contact -> save error');
+          console.log('Crime -> save error');
           //show the user that it couldn't be updated
         });
     },
 
     cancel () {
-      console.log('Contact -> cancel');
-      this.first = this.contact.first;
-      this.last = this.contact.last;
-      this.phone = this.contact.phone;
+      console.log('Crime -> cancel');
+      this.charge = this.crime.charge;
+      this.location = this.crime.location;
+      this.year = this.crime.year;
       this.editing = false;
     }
 

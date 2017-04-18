@@ -15,13 +15,13 @@ class CreateCrimeTable extends Migration
     {
       Schema::create('crimes', function(Blueprint $table) {
           $table->increments('id');
-          $table->string('name');
-          $table->string('address');
-          $table->string('website');
-          $table->string('phone');
-          $table->string('cuisine');
-          $table->string('rating');
-          $table->string('hours');
+          $table->string('charge');
+          $table->string('location');
+          $table->integer('year');
+          $table->string('month');
+          $table->string('suspect');
+          $table->string('gender');
+          $table->string('age');
           $table->string('notes');
           $table->timestamps();
         });
@@ -34,6 +34,6 @@ class CreateCrimeTable extends Migration
      */
     public function down()
     {
-      Schema::dropIfExists('crimes');
+        Schema::dropIfExists('crimes');
     }
 }

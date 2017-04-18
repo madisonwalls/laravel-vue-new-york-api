@@ -2,11 +2,11 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-3 nav-function-1">
-        <h2>Add New Restaurant</h2>
+        <h2>Add New Crime</h2>
       </div>
 
       <div class="col-sm-3 nav-function-2">
-        <h2>List All Restaurants</h2>
+        <h2>List All Crimes</h2>
       </div>
 
       <div class="col-sm-3 nav-function-3">

@@ -39,7 +39,7 @@ export default {
 
   methods: {
     create () {
-      console.log('RestaurantForm -> create');
+      console.log('CrimeForm -> create');
       if (this.loading) {
         alert('request is already being made');
         return false;
@@ -48,7 +48,7 @@ export default {
       this.sendRequest();
     },
     sendRequest () {
-    axios.post('/restaurants', {
+    axios.post('/crimes', {
       name: this.name,
       address: this.address,
       website: this.website,
@@ -58,14 +58,14 @@ export default {
       hours: this.hours,
     })
     .then((response) => {
-      console.log('RestaurantForm -> sendRequest success');
+      console.log('CrimeForm -> sendRequest success');
       console.log(response.data);
       this.loading = false;
       this.reset();
       this.$emit('created');
     })
     .catch((error) => {
-      console.error('RestaurantForm-> sendRequest error');
+      console.error('CrimeForm-> sendRequest error');
       // show an error message
     });
   },

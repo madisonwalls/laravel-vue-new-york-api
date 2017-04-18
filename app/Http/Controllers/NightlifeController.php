@@ -2,51 +2,51 @@
 
 namespace App\Http\Controllers;
 
-use App\Restaurant;
+use App\Crime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
 
-class RestaurantController extends Controller
+class CrimeController extends Controller
 {
   public function index ()
     {
       //list
-      //GET /Restaurants
-      $Restaurants = Restaurant::all();
-      return Response::json($Restaurants);
+      //GET /Crimes
+      $Crimes = Crime::all();
+      return Response::json($Crimes);
     }
 
     public function create (Request $request)
     {
-      //POST /Restaurants
-      //create a new Restaurant
-      $restaurant = Restaurant::create($request->all());
+      //POST /Crimes
+      //create a new Crime
+      $crime = Crime::create($request->all());
       return Response::json(['created' => true]);
     }
 
     public function show ($id)
     {
-      //Get /Restaurants/$id
-      $restaurant = Restaurant::find($id);
-      return Response::json($restaurant);
+      //Get /Crimes/$id
+      $crime = Crime::find($id);
+      return Response::json($crime);
     }
 
     public function update (Request $request, $id)
     {
-      //PUT /Restaurants/$id
-      //updates a single Restaurant
-      $restaurant = Restaurant::find($id);
-      $restaurant->update($request->all());
+      //PUT /Crimes/$id
+      //updates a single Crime
+      $crime = Crime::find($id);
+      $crime->update($request->all());
       return Response::json(['Updated' => true]);
     }
 
     public function destroy (Request $request, $id)
     {
-      //Delete /Restaurants/$id
-      //Remove a single Restaurant
+      //Delete /Crimes/$id
+      //Remove a single Crime
 
-      $restaurant= Restaurant::find($id);
-      $restaurant->delete();
+      $crime= Crime::find($id);
+      $crime->delete();
       return Response::json(['deleted' => true]);
     }
 }
