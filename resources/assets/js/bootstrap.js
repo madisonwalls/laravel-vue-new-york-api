@@ -1,6 +1,9 @@
 
 window._ = require('lodash');
 
+window.c3 = require('c3');
+window.d3 = require('d3');
+
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
  * for JavaScript based Bootstrap features such as modals and tabs. This

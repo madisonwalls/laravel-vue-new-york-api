@@ -11,7 +11,7 @@
         <input class="input-field" type="text" v-model="gender" placeholder="Gender"/>
         <input class="input-field" type="text" v-model="age" placeholder="Age" />
         <input class="input-field" type="text" v-model="notes" placeholder="Notes" />
-        <button class="btn btn-primary" @click="create" :disabled="loading">Create</button>
+        <button class="btn-add" @click="create" :disabled="loading">Create</button>
       </div>
     </div>
 </div>
@@ -104,7 +104,7 @@ export default {
   padding: 10px 50px 10px 8px;
   font-family: Lato;
   font-size: 16px;
-  border: 2px solid #7A9D96;
+  border: 2px solid #0A67BD;
   border-radius: 4px;
   margin: 10px;
 }
@@ -119,9 +119,30 @@ export default {
   font-family: NewYork;
   text-align: center;
   font-size: 50px;
-  margin-top: 80px;
-
+  margin-top: 120px;
 }
+
+.form {
+  margin-bottom: 100px;
+}
+
+.btn-add {
+  border: 2px solid #0A67BD;
+  padding: 15px 40px;
+  border-radius: 4px;
+  margin: 10px;
+  background-color: #FFCA31;
+  float: right;
+  color: #0A67BD;
+  font-size: 18px;
+}
+
+.btn-add:hover {
+  background-color: #0A67BD;
+  color: #FFCA31;
+  border: 2px solid #FFCA31;
+}
+
 
 
 </style>

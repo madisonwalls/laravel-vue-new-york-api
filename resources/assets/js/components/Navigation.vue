@@ -1,18 +1,21 @@
 <template>
   <div class="container-fluid">
     <div class="row">
+      <a href="#CrimeForm">
       <div class="col-sm-3 nav-function-1">
         <h2>Add New Crime</h2>
       </div>
-
+    </a>
+    <a href="#CrimeList">
       <div class="col-sm-3 nav-function-2">
         <h2>List All Crimes</h2>
       </div>
-
+    </a>
+    <a href="#StyleGuide">
       <div class="col-sm-3 nav-function-3">
         <h2>Style Guide</h2>
       </div>
-
+    </a>
       <div class="col-sm-3 nav-function-4">
         <h2>API Documentation</h2>
       </div>
@@ -54,42 +57,66 @@ export default {
 
 .nav-function-1 h2 {
   text-align: center;
-  height: 150px;
-  padding-top: 60px;
+  height: 200px;
+  padding-top: 85px;
   font-family: Source Sans Pro;
   font-size: 20px;
-  background-color: #72A98F;
+  background-color: #052F57;
   color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
+.nav-function-1:hover {
+  background-color: #FFDB0D;
+  cursor: pointer;
 }
 
 .nav-function-2 h2 {
   text-align: center;
-  height: 150px;
-  padding: 60px 0px 0px 0px;
+  height: 200px;
+  padding: 85px 0px 0px 0px;
   font-family: Source Sans Pro;
   font-size: 20px;
-  background-color: #6B3251;
+  background-color: #07447E;
   color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
+.nav-function-2:hover {
+  background-color: #FFDB0D;
+  cursor: pointer;
 }
 
 .nav-function-3 h2 {
   text-align: center;
-  height: 150px;
-  padding-top: 60px;
+  height: 200px;
+  padding-top: 85px;
   font-family: Source Sans Pro;
   font-size: 20px;
-  background-color: #3D5A6C;
+  background-color: #0A67BD;
   color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
+.nav-function-3:hover {
+  background-color: #FFDB0D;
+  cursor: pointer;
 }
 
 .nav-function-4 h2 {
   text-align: center;
-  height: 150px;
-  padding-top: 60px;
+  height: 200px;
+  padding-top: 85px;
   font-family: Source Sans Pro;
   font-size: 20px;
-  background-color: #A1CCA5;
+  background-color: #064271;
   color: #FFFFFF;
+  margin-bottom: 0px;
+}
+
+.nav-function-4:hover {
+  background-color: #FFDB0D;
+  cursor: pointer;
 }
 
 .nav-function-1, .nav-function-2, .nav-function-3, .nav-function-4 {

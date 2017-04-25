@@ -70,7 +70,6 @@
         <button type="button" name="button" class="smallButton">Small Button</button>
         <button type="button" name="button" class="regularButton">Regular Button</button>
         <button type="button" name="button" class="largeButton">Large Button</button>
-        <button type="button" name="button" class="deleteButton">Delete Button</button>
       </div>
       </div>
   </div>
@@ -160,7 +159,7 @@ export default {
 
  .color1 {
 
-  background-color: #DAFFED;
+  background-color: #AED0E5;
   width: 100px;
   height: 100px;
   display: inline-block;
@@ -184,7 +183,7 @@ export default {
 
 .color2 {
 
-  background-color: #A1CCA5;
+  background-color: #3FA7D3;
   width: 100px;
   height: 100px;
   display: inline-block;
@@ -193,7 +192,7 @@ export default {
 
 .color3 {
 
-  background-color: #72A98F;
+  background-color: #3D5A6C;
   width: 100px;
   height: 100px;
   display: inline-block;
@@ -202,7 +201,7 @@ export default {
 
 .color4 {
   margin-bottom: 40px;
-  background-color: #AED0E5;
+  background-color: #0A67BD;
   width: 100px;
   height: 100px;
   display: inline-block;
@@ -210,7 +209,7 @@ export default {
 
 .color5 {
   margin-bottom: 40px;
-  background-color: #3FA7D3;
+  background-color: #07447E;
   width: 100px;
   height: 100px;
   display: inline-block;
@@ -218,7 +217,7 @@ export default {
 
 .color6 {
   margin-bottom: 40px;
-  background-color: #3D5A6C;
+  background-color: #052F57;
   width: 100px;
   height: 100px;
   display: inline-block;
@@ -226,7 +225,7 @@ export default {
 
 .color7 {
   margin-bottom: 40px;
-  background-color: #6B4A5C;
+  background-color: #FFE659;
   width: 100px;
   height: 100px;
   display: inline-block;
@@ -234,7 +233,7 @@ export default {
 
 .color8 {
   margin-bottom: 40px;
-  background-color: #6B3251;
+  background-color: #FFDB0D;
   width: 100px;
   height: 100px;
   display: inline-block;
@@ -242,7 +241,7 @@ export default {
 
 .color9 {
   margin-bottom: 40px;
-  background-color: #6D336A;
+  background-color: #FFCA31;
   width: 100px;
   height: 100px;
   display: inline-block;
@@ -340,5 +339,24 @@ export default {
   font-weight: bold;
   font-size: 22px;
 }
+
+.largeButton {
+  border: solid 3px #FFDB0D;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 15px 45px;
+  border-radius: 5px;
+  color: #FFDB0D;
+  margin-bottom: 40px;
+}
+
+.smallButton {
+  margin-bottom: 5px;
+  background-color: #052F57;
+  border-radius: 4px;
+  padding: 5px 10px;
+  border: none;
+  color: #ffffff;
+}
+
 
 </style>
