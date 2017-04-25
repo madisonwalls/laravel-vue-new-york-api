@@ -7,7 +7,7 @@
       </div>
     </div>
       <div class="row">
-        <div class="col-md-5 col-md-offset-7 info">
+        <div class="col-sm-5 col-sm-offset-7 info">
             <p>NYC is a large and exciting city, but it can sometimes be dangerous as well. This site lets you report a crime that you know about, along with some important information to help keep the streets safe. Start by adding a new crime, or view the currently listed crimes below.</p>
             <button class="alert-crime">Report Crime Now</button>
           </div>
@@ -16,7 +16,7 @@
   </div>
     <Mapchart></Mapchart>
     <CrimeForm id="CrimeForm" @created="fetch"></CrimeForm>
-      <div class="col-md-12 CrimeList">
+      <div class="col-sm-12 CrimeList-fluid">
         <h1 id="CrimeList">Crime List</h1>
           <Crime v-for="(form, index) in crimes" :key="index" :crime="form" @updated="update" @deleted="remove(index)"></Crime>
       </div>
@@ -103,12 +103,13 @@ export default {
 
 .title h1 {
   font-family: NewYork;
-  font-size: 70px;
+  font-size: 80px;
   display: block;
   vertical-align: middle;
   padding-left: 40px;
   color: #FFDB0D;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
+  margin-top: 20px;
 }
 
 .title img {
@@ -156,20 +157,36 @@ export default {
 
 }
 
-.CrimeList h1 {
+.alert-crime:hover {
+  background-color: #FFDB0D;
+  color: #3B3B3B;
+}
+
+.CrimeList-fluid h1 {
   font-family: NewYork;
   text-align: center;
   font-size: 50px;
   margin-bottom: 30px;
 }
 
-.CrimeList {
+.CrimeList-fluid {
   background-color: #F0F0F0;
+  padding: 0px;
 }
 
 .styleguide {
   background-color: #F0F0F0;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
+
+@media screen and (max-width: 560px) {
+
+.title h1 {
+  font-size: 50px;
+}
+
+}
 
 </style>

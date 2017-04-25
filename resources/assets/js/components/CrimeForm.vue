@@ -109,6 +109,12 @@ export default {
   margin: 10px;
 }
 
+.input-field:focus {
+  border-color: #FFDB0D;
+  background-color: #ffffff;
+  outline-color: #FFDB0D;
+}
+
 .form-inputs {
   margin: auto;
   width: 80%;
@@ -127,22 +133,33 @@ export default {
 }
 
 .btn-add {
-  border: 2px solid #0A67BD;
+  border: 4px solid #0A67BD;
   padding: 15px 40px;
   border-radius: 4px;
   margin: 10px;
-  background-color: #FFCA31;
+  background-color: #052F57;
   float: right;
-  color: #0A67BD;
+  color: #ffffff;
   font-size: 18px;
 }
 
 .btn-add:hover {
   background-color: #0A67BD;
-  color: #FFCA31;
-  border: 2px solid #FFCA31;
+  color: #ffffff;
+  border: 4px solid #0A67BD;
 }
 
+@media screen and (max-width: 560px) {
+
+  .input-field {
+    width: 100%;
+  }
+
+  .btn-add {
+    float: none;
+  }
+
+}
 
 
 </style>

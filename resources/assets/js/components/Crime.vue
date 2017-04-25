@@ -3,24 +3,24 @@
         <div class="col-sm-4 crime-card">
             <div class="card-body">
               <div class="live" v-show="!editing">
-                <a class="tool remove-icon" href="#">
-                <i class="glyphicon glyphicon-remove" @click.prevent="remove"></i></a></br>
-                <div class="header-crime">
-                  <h1>{{ crime.charge }}</h1> <p class="crime-time"> {{ crime.month }} {{ crime.year }} </p>
+                  <a class="tool remove-icon" href="#">
+                  <i class="glyphicon glyphicon-remove" @click.prevent="remove"></i></a></br>
+                    <div class="header-crime">
+                      <h1>{{ crime.charge }}</h1> <p class="crime-time"> {{ crime.month }} {{ crime.year }} </p>
+                    </div>
+                    <div class="body-crime">
+                        <a class="tool map-crime" target="_blank" :href="'http://maps.google.com/?q=' + crime.location"> <i class="glyphicon glyphicon-map-marker"></i> {{ crime.location }} </a>
+                        <a class="tool edit-icon" href="#" @click.prevent="editing = true" v-show="!editing">
+                        <i class="glyphicon glyphicon-pencil"></i>Edit</a></br>
+                        </br>
+                        </br>
+                        <p><strong>Suspect Information:</strong></p>
+                        <p><strong>Name: </strong> {{ crime.suspect }}</p>
+                        <p><strong>Age: </strong> {{ crime.age }}</p>
+                        <p><strong>Gender: </strong> {{ crime.gender }}</p>
+                        <p><strong>Crime Notes: </strong> {{ crime.notes }}</p>
+                    </div>
                 </div>
-                <div class="body-crime">
-                  <a class="tool map-crime" target="_blank" :href="'http://maps.google.com/?q=' + crime.location"> <i class="glyphicon glyphicon-map-marker"></i> {{ crime.location }} </a>
-                  <a class="tool edit-icon" href="#" @click.prevent="editing = true" v-show="!editing">
-                  <i class="glyphicon glyphicon-pencil"></i>Edit</a></br>
-                  </br>
-                  </br>
-                  <p><strong>Suspect Information:</strong></p>
-                  <p><strong>Name: </strong> {{ crime.suspect }}</p>
-                  <p><strong>Age: </strong> {{ crime.age }}</p>
-                  <p><strong>Gender: </strong> {{ crime.gender }}</p>
-                  <p><strong>Crime Notes: </strong> {{ crime.notes }}</p>
-                </div>
-              </div>
             </div>
             <div class="editing" v-show="editing">
                 <p>
@@ -150,6 +150,12 @@ export default {
   display: inline-block;
 }
 
+.tool > i:hover {
+  margin-right: 10px;
+  color: #FFDB0D;
+  display: inline-block;
+}
+
 .tool > a {
   text-align: right;
 }
@@ -167,7 +173,7 @@ export default {
 
 }
 
-.CrimeList {
+.CrimeList-fluid {
   display: inline-block;
   padding: 50px 0px;
 
@@ -178,6 +184,7 @@ export default {
   font-family: source sans pro;
   font-weight: lighter;
   font-size: 30px;
+  margin-bottom: 5px;
 }
 
 .body-crime{
@@ -236,9 +243,6 @@ export default {
 
 }
 
-.remove-icon:hover {
-  color: #FFDB0D;
-}
 
 .map-crime {
   float: left;
@@ -255,13 +259,15 @@ export default {
 }
 
 .map-crime:hover {
-  color: #052F57;
+  background-color: #052F57;
   display: inline-block;
   text-decoration: none;
+  color: #ffffff;
 }
 
 .edit-icon:hover {
-  color: #ccc;
+  color: #ffffff;
+  background-color: #0A67BD;
   text-decoration: none;
 }
 

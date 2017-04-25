@@ -1,11 +1,11 @@
 <template>
-  <div class="Mapinteractive">
-    <div class="container">
-  <div class="row">
-<div class="col-xs-12 crime-text">
+<div class="Mapinteractive">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 crime-text">
           <h1>Crime by County in 2015</h1>
-		  <p>Scroll over a county to reveal how many recorded crimes took place in 2015</p>
-        </div>
+		        <p>Scroll over a county to reveal how many recorded crimes took place in 2015</p>
+      </div>
   </div>
 </div>
 

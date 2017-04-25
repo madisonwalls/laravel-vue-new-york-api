@@ -16,9 +16,11 @@
         <h2>Style Guide</h2>
       </div>
     </a>
+    <a target="_blank" href="https://madisonwalls.gitbooks.io/new-york-city-crime/content/">
       <div class="col-sm-3 nav-function-4">
         <h2>API Documentation</h2>
       </div>
+    </a>
 
     </div>
   </div>
@@ -122,6 +124,16 @@ export default {
 .nav-function-1, .nav-function-2, .nav-function-3, .nav-function-4 {
   padding-left: 0px !important;
   padding-right: 0px !important;
+}
+
+@media screen and (max-width: 560px) {
+
+  .nav-function-1 h2, .nav-function-2 h2, .nav-function-3 h2, .nav-function-4 h2 {
+    margin-top: 0px;
+    height: 100px;
+    padding-top: 35px;
+  }
+
 }
 
 </style>

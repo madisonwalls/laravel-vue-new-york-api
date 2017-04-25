@@ -13,23 +13,23 @@
         <h2>Colors</h2>
       </div>
       <div class="col-md-8">
-      <div class="color1"><p>Mint #CAE4DB</p></div>
-      <div class="color2"><p>Seafoam #7A9D96</p></div>
-      <div class="color3"><p>Hunter #319B86</p></div>
-      </br>
-      <div class="color4"><p>Cotton #659ba8</p></div>
-      <div class="color5"><p>Bluebell #0088a8</p></div>
-      <div class="color6"><p>Jeans #00303f</p></div>
-      </br>
-      <div class="color7"><p>Berry #DBC179</p></div>
-      <div class="color8"><p>Wine #DCAE1D</p></div>
-      <div class="color9"><p>Antique #BA8900</p></div>
-      </br>
-      <div class="color10"><p>Clean #ffffff</p></div>
-      <div class="color11"><p>Wired #999999</p></div>
-      <div class="color12"><p>Night #000000</p></div>
+        <div class="color1"><p>Cotton #AED0E5</p></div>
+        <div class="color2"><p>Bluebell #3FA7D3</p></div>
+        <div class="color3"><p>Jeans #3D5A6C</p></div>
+        </br>
+        <div class="color4"><p>Electric #0A67BD</p></div>
+        <div class="color5"><p>Ocean #07447E</p></div>
+        <div class="color6"><p>Navy #052F57</p></div>
+        </br>
+        <div class="color7"><p>Lemon #FFE659</p></div>
+        <div class="color8"><p>Warning #FFDB0D</p></div>
+        <div class="color9"><p>Summer #FFCA31</p></div>
+        </br>
+        <div class="color10"><p>Clean #ffffff</p></div>
+        <div class="color11"><p>Wired #999999</p></div>
+        <div class="color12"><p>Night #000000</p></div>
       </div>
-      </div>
+    </div>
   </div>
   <div class="container">
     <div class="row">
@@ -61,6 +61,7 @@
         </div>
       </div>
   </div>
+
   <div class="container">
     <div class="row">
       <div class="col-md-4 category">
@@ -71,30 +72,31 @@
         <button type="button" name="button" class="regularButton">Regular Button</button>
         <button type="button" name="button" class="largeButton">Large Button</button>
       </div>
-      </div>
+    </div>
   </div>
+
   <div class="container">
     <div class="row">
       <div class="col-md-4 category">
         <h2>Lists</h2>
       </div>
       <div class="col-md-8">
-        <ul>
+      <ul>
        <li>This is an example of a list item.</li>
        <li>Another chance to see what a list item looks like.</li>
        <li>For example purposes, here is a list item.</li>
        <li>This is the styleguide for a New York Crime Website.</li>
        <li>Here is the last example on this list.</li>
-    </ul>
-    <ol>
-      <li>This is an example of a list item.</li>
-      <li>Another chance to see what a list item looks like.</li>
-      <li>For example purposes, here is a list item.</li>
-      <li>This is the styleguide for a New York Crime Website.</li>
-      <li>Here is the last example on this list.</li>
+     </ul>
+     <ol>
+        <li>This is an example of a list item.</li>
+        <li>Another chance to see what a list item looks like.</li>
+        <li>For example purposes, here is a list item.</li>
+        <li>This is the styleguide for a New York Crime Website.</li>
+        <li>Here is the last example on this list.</li>
     </ol>
       </div>
-      </div>
+    </div>
   </div>
   <div class="container">
     <div class="row">
@@ -103,14 +105,14 @@
       </div>
       <div class="col-md-8">
         <input class="inputField" type="text" name="" value="" placeholder="Example Input Field">
-       <textarea class="textareaInput" type="text" name="" value="" placeholder="Example Text Area Field"></textarea>
-       <select class="selectInput" type="text" name="" value="">
+        <textarea class="textareaInput" type="text" name="" value="" placeholder="Example Text Area Field"></textarea>
+        <select class="selectInput" type="text" name="" value="">
          <option value="Example 1">Example 1</option>
          <option value="Example 2">Example 2</option>
          <option value="Example 3">Example 3</option>
        </select>
       </div>
-      </div>
+    </div>
   </div>
 </div>
 
@@ -343,9 +345,19 @@ export default {
 .largeButton {
   border: solid 3px #FFDB0D;
   background-color: rgba(0, 0, 0, 0);
-  padding: 15px 45px;
+  padding: 25px 95px;
   border-radius: 5px;
   color: #FFDB0D;
+  margin-bottom: 40px;
+  display: block;
+}
+
+.largeButton:hover {
+  border: solid 3px #FFDB0D;
+  background-color: #FFDB0D;
+  padding: 25px 95px;
+  border-radius: 5px;
+  color: #ffffff;
   margin-bottom: 40px;
 }
 
@@ -356,7 +368,70 @@ export default {
   padding: 5px 10px;
   border: none;
   color: #ffffff;
+  display: block;
+  margin-bottom: 15px;
 }
 
+
+.smallButton:hover {
+  margin-bottom: 5px;
+  background-color: #0A67BD;
+  border-radius: 4px;
+  padding: 5px 10px;
+  border: none;
+  color: #ffffff;
+}
+
+.inputField {
+
+  width: 50%;
+  padding: 10px 50px 10px 8px;
+  font-family: Lato;
+  font-size: 16px;
+  border: 2px solid #0A67BD;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+.textareaInput {
+
+  width: 80%;
+  padding: 10px 50px 10px 8px;
+  font-family: Lato;
+  font-size: 16px;
+  border: 2px solid #0A67BD;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+
+.selectInput {
+
+  width: 30%;
+  padding: 10px 50px 10px 20px;
+  font-family: Lato;
+  font-size: 16px;
+  border: 2px solid #0A67BD;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+
+.regularButton {
+  border: 4px solid #0A67BD;
+  padding: 10px 35px;
+  border-radius: 4px;
+  background-color: #052F57;
+  color: #ffffff;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.regularButton:hover {
+  background-color: #0A67BD;
+  color: #ffffff;
+  border: 4px solid #0A67BD;
+}
 
 </style>
