@@ -434,4 +434,21 @@ export default {
   border: 4px solid #0A67BD;
 }
 
+@media screen and (max-width: 560px) {
+
+
+  .selectInput {
+    width: 90%;
+  }
+
+  .textareaInput {
+    width: 100%;
+  }
+
+  .inputField {
+    width: 100%;
+  }
+
+ }
+
 </style>

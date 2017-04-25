@@ -22,8 +22,7 @@
       </div>
     <Mapinteractive></Mapinteractive>
     <Styleguide id="StyleGuide" class="styleguide"></Styleguide>
-
-
+    <Credits class="credits-fluid"></Credits>
 
   </div>
 </template>
@@ -36,6 +35,7 @@ import Navigation from './Navigation';
 import Styleguide from './Styleguide';
 import Mapchart from './Mapchart';
 import Mapinteractive from './Mapinteractive';
+import Credits from './Credits';
 
 
 
@@ -46,7 +46,8 @@ export default {
     Navigation,
     Styleguide,
     Mapchart,
-    Mapinteractive
+    Mapinteractive,
+    Credits
   },
 
   data () {
@@ -176,8 +177,14 @@ export default {
 
 .styleguide {
   background-color: #F0F0F0;
-  padding: 10px;
-  margin-bottom: 20px;
+  padding: 30px;
+}
+
+.credits-fluid {
+  background-color: #052F57;
+  color: white;
+  margin: 0px;
+  padding: 50px;
 }
 
 
@@ -185,6 +192,10 @@ export default {
 
 .title h1 {
   font-size: 50px;
+}
+
+.styleguide {
+  padding: 15px;
 }
 
 }
