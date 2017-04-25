@@ -18,6 +18,9 @@
     <CrimeForm id="CrimeForm" @created="fetch"></CrimeForm>
       <div class="col-sm-12 CrimeList-fluid">
         <h1 id="CrimeList">Crime List</h1>
+        <div v-show="removeCrime" class="remove-message">
+            <p><strong>Crime Removed</strong></p>
+          </div>
           <Crime v-for="(form, index) in crimes" :key="index" :crime="form" @updated="update" @deleted="remove(index)"></Crime>
       </div>
     <Mapinteractive></Mapinteractive>
@@ -53,6 +56,7 @@ export default {
   data () {
     return {
       crimes: [],
+      removeCrime: false
     }
   },
 
@@ -81,13 +85,16 @@ export default {
     update (data) {
       var i = this.crimes.indexOf(data.crime);
       for (var d in data) {
-        this.crimes[i][d] = data[d];
+        var crime = this.crimes[i];
+        if (d === 'crime') continue;
+        crime[d] = data[d];
       }
     },
 
     remove (i) {
-      console.log(`App -> Remove Id: ${i}`);
-      this.crimes.slice(i,1);
+      console.log(`App -> Remove ID: ${i}`);
+      this.crimes.splice(i,1);
+      this.removeCrime = true;
     }
   }
 }
@@ -155,12 +162,14 @@ export default {
   border-radius: 5px;
   color: #FFDB0D;
   margin-bottom: 40px;
+  transition: all 0.4s ease-in-out;
 
 }
 
 .alert-crime:hover {
   background-color: #FFDB0D;
   color: #3B3B3B;
+  transition: all 0.4s ease-in-out;
 }
 
 .CrimeList-fluid h1 {
@@ -185,6 +194,17 @@ export default {
   color: white;
   margin: 0px;
   padding: 50px;
+}
+
+.remove-message {
+  background-color:#0A67BD;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-left: #052F57 8px solid;
+  width: 25%;
+  margin: 20px auto;
+  color: #ffffff;
+  transition: all 0.4s ease-in-out;
 }
 
 

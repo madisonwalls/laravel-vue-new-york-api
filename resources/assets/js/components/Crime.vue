@@ -42,8 +42,8 @@
                   <p>Notes</p>
                   <input type="text" v-model="notes" />
                 <p>
-                  <button class="btn btn-success" @click="save">Save</button>
-                  <button class="btn btn-default" @click="cancel">Cancel</button>
+                  <button class="save" @click="save">Save</button>
+                  <button class="cancel" @click="cancel">Cancel</button>
                 </p>
           </div>
         </div>
@@ -108,6 +108,7 @@ export default {
         .then((response) => {
           console.log('Crime -> save success');
           this.$emit('updated', {
+            crime: this.crime,
             charge: this.charge,
             location: this.location,
             year: this.year,
@@ -207,6 +208,7 @@ export default {
   border-radius: 10px;
   margin: 0px;
   padding: 20px;
+  padding-bottom: 55px;
   margin: auto;
   width: 90%;
   border-left: 8px solid #052F57;
@@ -219,6 +221,42 @@ export default {
 
 .crime-card p {
   font-family: source sans pro;
+}
+
+.save {
+  border: 4px solid green;
+  padding: 5px 20px;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-color: #052F57;
+  float: left;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.save:hover {
+  background-color: green;
+  color: #ffffff;
+  border: 4px solid #0A67BD;
+  transition: all 0.4s ease-in-out;
+}
+
+.cancel {
+  border: 4px solid #0A67BD;
+  padding: 5px 20px;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-color: #052F57;
+  float: right;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.cancel:hover {
+  background-color: #0A67BD;
+  color: #ffffff;
+  border: 4px solid #0A67BD;
+  transition: all 0.4s ease-in-out;
 }
 
 .edit-icon {
@@ -263,12 +301,14 @@ export default {
   display: inline-block;
   text-decoration: none;
   color: #ffffff;
+  transition: all 0.4s ease-in-out;
 }
 
 .edit-icon:hover {
   color: #ffffff;
   background-color: #0A67BD;
   text-decoration: none;
+  transition: all 0.4s ease-in-out;
 }
 
 .crime-time {
@@ -292,6 +332,7 @@ export default {
   border-bottom-right-radius: 0px;
   border-left: 8px solid #052F57;
 }
+
 
 
 </style>

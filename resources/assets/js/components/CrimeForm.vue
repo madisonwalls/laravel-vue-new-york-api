@@ -1,6 +1,9 @@
 <template>
   <div class="container form">
     <h1>Add New Crime</h1>
+    <div v-show="update" class="update-message">
+        <p><strong>Your Crime Has Been Saved!</strong> View the crime in the list below.</p>
+    </div>
     <div class="row">
       <div class="form-inputs">
         <input class="input-field" type="text" v-model="charge" placeholder="Charged Crime" />
@@ -39,7 +42,8 @@ export default {
       gender: '',
       age: '',
       notes: '',
-      loading: false
+      loading: false,
+      update: false
     }
   },
 
@@ -69,6 +73,7 @@ export default {
       console.log('CrimeForm -> sendRequest success');
       console.log(response.data);
       this.loading = false;
+      this.update = true;
       this.reset();
       this.$emit('created');
     })
@@ -147,6 +152,15 @@ export default {
   background-color: #0A67BD;
   color: #ffffff;
   border: 4px solid #0A67BD;
+}
+
+.update-message {
+  background-color:#FFE659;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-left: #FFCA31 8px solid;
+  width: 75%;
+  margin: 20px auto;
 }
 
 @media screen and (max-width: 560px) {

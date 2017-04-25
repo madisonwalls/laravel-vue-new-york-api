@@ -350,6 +350,7 @@ export default {
   color: #FFDB0D;
   margin-bottom: 40px;
   display: block;
+  font-size: 20px;
 }
 
 .largeButton:hover {
@@ -359,6 +360,7 @@ export default {
   border-radius: 5px;
   color: #ffffff;
   margin-bottom: 40px;
+  transition: all 0.4s ease-in-out;
 }
 
 .smallButton {
@@ -380,6 +382,7 @@ export default {
   padding: 5px 10px;
   border: none;
   color: #ffffff;
+  transition: all 0.4s ease-in-out;
 }
 
 .inputField {
@@ -432,6 +435,7 @@ export default {
   background-color: #0A67BD;
   color: #ffffff;
   border: 4px solid #0A67BD;
+  transition: all 0.4s ease-in-out;
 }
 
 @media screen and (max-width: 560px) {
