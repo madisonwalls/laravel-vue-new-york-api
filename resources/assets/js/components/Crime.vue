@@ -174,8 +174,8 @@ export default {
 
 }
 
-.CrimeList-fluid {
-  display: inline-block;
+.CrimeList {
+  display: block;
   padding: 50px 0px;
 
 }
@@ -186,6 +186,7 @@ export default {
   font-weight: lighter;
   font-size: 30px;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .body-crime{

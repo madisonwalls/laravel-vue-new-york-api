@@ -10,7 +10,7 @@
       <div class="row">
         <div class="col-sm-5 col-sm-offset-1 info">
             <p>NYC is a large and exciting city, but it can sometimes be dangerous as well. This site lets you report a crime that you know about, along with some important information to help keep the streets safe. Start by adding a new crime, or view the currently listed crimes below.</p>
-            <button class="alert-crime">Report Crime Now</button>
+            <a href="#CrimeForm"><button class="alert-crime">Report Crime Now</button></a>
           </div>
       </div>
     <Navigation></Navigation>
@@ -178,7 +178,7 @@ export default {
   transition: all 0.4s ease-in-out;
 }
 
-.CrimeList h1 {
+h1#CrimeList {
   font-family: NewYork;
   text-align: center;
   font-size: 50px;
