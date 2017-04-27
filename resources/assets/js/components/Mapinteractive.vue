@@ -3709,7 +3709,7 @@ export default {
   path:hover {
 
       background-color: #FFDB0D;
-      fill: #FFDB0D;
+      fill: #FFDB0D !important;
   }
 
   polygon:hover {

@@ -6,17 +6,17 @@
           <h1>New York City </br> Crime Reporter</h1>
       </div>
     </div>
+    <Mapchart></Mapchart>
       <div class="row">
-        <div class="col-sm-5 col-sm-offset-7 info">
+        <div class="col-sm-5 col-sm-offset-1 info">
             <p>NYC is a large and exciting city, but it can sometimes be dangerous as well. This site lets you report a crime that you know about, along with some important information to help keep the streets safe. Start by adding a new crime, or view the currently listed crimes below.</p>
             <button class="alert-crime">Report Crime Now</button>
           </div>
       </div>
     <Navigation></Navigation>
   </div>
-    <Mapchart></Mapchart>
     <CrimeForm id="CrimeForm" @created="fetch"></CrimeForm>
-      <div class="col-sm-12 CrimeList-fluid">
+      <div class="col-sm-12 CrimeList">
         <h1 id="CrimeList">Crime List</h1>
         <div v-show="removeCrime" class="remove-message">
             <p><strong>Crime Removed</strong></p>
@@ -24,6 +24,7 @@
           <Crime v-for="(form, index) in crimes" :key="index" :crime="form" @updated="update" @deleted="remove(index)"></Crime>
       </div>
     <Mapinteractive></Mapinteractive>
+    <PieGraphs class="pie-graphs"></PieGraphs>
     <Styleguide id="StyleGuide" class="styleguide"></Styleguide>
     <Credits class="credits-fluid"></Credits>
 
@@ -39,7 +40,7 @@ import Styleguide from './Styleguide';
 import Mapchart from './Mapchart';
 import Mapinteractive from './Mapinteractive';
 import Credits from './Credits';
-
+import PieGraphs from './PieGraphs';
 
 
 export default {
@@ -50,7 +51,8 @@ export default {
     Styleguide,
     Mapchart,
     Mapinteractive,
-    Credits
+    Credits,
+    PieGraphs
   },
 
   data () {
@@ -135,8 +137,12 @@ export default {
   font-weight: lighter;
   font-size: 18px;
   color: #ffffff;
-  padding: 30px;
+  padding: 0px 30px;
 
+}
+
+.info {
+  margin-top: 100px;
 }
 
 #app {
@@ -172,14 +178,14 @@ export default {
   transition: all 0.4s ease-in-out;
 }
 
-.CrimeList-fluid h1 {
+.CrimeList h1 {
   font-family: NewYork;
   text-align: center;
   font-size: 50px;
   margin-bottom: 30px;
 }
 
-.CrimeList-fluid {
+.CrimeList {
   background-color: #F0F0F0;
   padding: 0px;
 }
@@ -207,6 +213,9 @@ export default {
   transition: all 0.4s ease-in-out;
 }
 
+.pie-graphs {
+  margin-bottom: 80px;
+}
 
 @media screen and (max-width: 560px) {
 
