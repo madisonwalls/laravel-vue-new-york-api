@@ -6,6 +6,8 @@ use App\Crime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Response;
 
+//Methods for REST and CRUD
+
 class CrimeController extends Controller
 {
   public function index ()

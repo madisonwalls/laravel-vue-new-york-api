@@ -1,53 +1,60 @@
 <template>
   <div class="Crime">
         <div class="col-sm-4 crime-card">
+
             <div class="card-body">
               <div class="live" v-show="!editing">
                   <a class="tool remove-icon" href="#">
                   <i class="glyphicon glyphicon-remove" @click.prevent="remove"></i></a></br>
-                    <div class="header-crime">
-                      <h1>{{ crime.charge }}</h1> <p class="crime-time"> {{ crime.month }} {{ crime.year }} </p>
-                    </div>
-                    <div class="body-crime">
-                        <a class="tool map-crime" target="_blank" :href="'http://maps.google.com/?q=' + crime.location"> <i class="glyphicon glyphicon-map-marker"></i> {{ crime.location }} </a>
-                        <a class="tool edit-icon" href="#" @click.prevent="editing = true" v-show="!editing">
-                        <i class="glyphicon glyphicon-pencil"></i>Edit</a></br>
-                        </br>
-                        </br>
-                        <p><strong>Suspect Information:</strong></p>
-                        <p><strong>Name: </strong> {{ crime.suspect }}</p>
-                        <p><strong>Age: </strong> {{ crime.age }}</p>
-                        <p><strong>Gender: </strong> {{ crime.gender }}</p>
-                        <p><strong>Crime Notes: </strong> {{ crime.notes }}</p>
-                    </div>
-                </div>
+
+                  <div class="header-crime">
+                    <h1>{{ crime.charge }}</h1> <p class="crime-time"> {{ crime.month }} {{ crime.year }} </p>
+                  </div>
+
+                  <div class="body-crime">
+                    <a class="tool map-crime" target="_blank" :href="'http://maps.google.com/?q=' + crime.location"> <i class="glyphicon glyphicon-map-marker"></i> {{ crime.location }} </a>
+                    <a class="tool edit-icon" href="#" @click.prevent="editing = true" v-show="!editing">
+                    <i class="glyphicon glyphicon-pencil"></i>Edit</a></br>
+                    </br>
+                    </br>
+                    <p><strong>Suspect Information:</strong></p>
+                    <p><strong>Name: </strong> {{ crime.suspect }}</p>
+                    <p><strong>Age: </strong> {{ crime.age }}</p>
+                    <p><strong>Gender: </strong> {{ crime.gender }}</p>
+                    <p><strong>Crime Notes: </strong> {{ crime.notes }}</p>
+                  </div>
+
+              </div>
             </div>
+
             <div class="editing" v-show="editing">
-                <p>
-                  <p>Charge</p>
-                  <input type="text" v-model="charge" />
-                  <p>Location</p>
-                  <input type="text" v-model="location" />
-                  <p>Month</p>
-                  <input type="text" v-model="month" />
-                  <p>Year</p>
-                  <input type="text" v-model="year" />
-                </p>
-                  <p>Suspect Name</p>
-                  <input type="text" v-model="suspect" />
-                  <p>Age</p>
-                  <input type="text" v-model="age" />
-                  <p>Gender</p>
-                  <input type="text" v-model="gender" />
-                  <p>Notes</p>
-                  <input type="text" v-model="notes" />
-                <p>
-                  <button class="save" @click="save">Save</button>
-                  <button class="cancel" @click="cancel">Cancel</button>
-                </p>
+              <p>
+                <p>Charge</p>
+                <input type="text" v-model="charge" />
+                <p>Location</p>
+                <input type="text" v-model="location" />
+                <p>Month</p>
+                <input type="text" v-model="month" />
+                <p>Year</p>
+                <input type="text" v-model="year" />
+              </p>
+                <p>Suspect Name</p>
+                <input type="text" v-model="suspect" />
+                <p>Age</p>
+                <input type="text" v-model="age" />
+                <p>Gender</p>
+                <input type="text" v-model="gender" />
+                <p>Notes</p>
+                <input type="text" v-model="notes" />
+              <p>
+                <button class="save" @click="save">Save</button>
+                <button class="cancel" @click="cancel">Cancel</button>
+              </p>
           </div>
-        </div>
+
+      </div>
   </div>
+
 </template>
 
 <script>
@@ -69,31 +76,28 @@ export default {
       age: this.crime.age,
       gender: this.crime.gender,
       notes: this.crime.notes,
-      editing: false,
-      loading: false
+      editing: false
     }
   },
 
   methods: {
 
     remove () {
+      //emits the event to delete the crime
       console.log('Crime -> remove');
-      this.loading = true;
       axios.delete(`/crimes/${this.crime.id}`)
         .then((response) => {
           console.log('Crime -> remove success');
           this.$emit('deleted')
-          this.loading = false;
         })
         .catch((error) => {
           console.log('Crime -> remove error');
-          // stop deleting and dont remove from the dom
-          // tell the user deletion failed
-          // EDITTT
+          // stops deleting
         });
     },
 
     save () {
+      //emits the event to update changes made to the crime
       console.log('Crime -> save');
       axios.put(`/crimes/${this.crime.id}`, {
           charge: this.charge,
@@ -122,11 +126,12 @@ export default {
         })
         .catch((error) => {
           console.log('Crime -> save error');
-          //show the user that it couldn't be updated
+          //console log's that it could not be updated
         });
     },
 
     cancel () {
+      //returns the data entry back to the original information
       console.log('Crime -> cancel');
       this.charge = this.crime.charge;
       this.location = this.crime.location;

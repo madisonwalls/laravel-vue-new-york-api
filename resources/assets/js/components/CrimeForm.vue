@@ -4,6 +4,7 @@
     <div v-show="update" class="update-message">
         <p><strong>Your Crime Has Been Saved!</strong> View the crime in the list below.</p>
     </div>
+
     <div class="row">
       <div class="form-inputs">
         <input class="input-field" type="text" v-model="charge" placeholder="Charged Crime" />
@@ -17,6 +18,7 @@
         <button class="btn-add" @click="create" :disabled="loading">Create</button>
       </div>
     </div>
+
 </div>
 
 
@@ -49,7 +51,9 @@ export default {
 
 
   methods: {
+
     create () {
+      //Alerts user if request is already being made, turns loader on, and sends create request
       console.log('CrimeForm -> create');
       if (this.loading) {
         alert('request is already being made');
@@ -58,39 +62,45 @@ export default {
       this.loading = true;
       this.sendRequest();
     },
+
     sendRequest () {
-    axios.post('/crimes', {
-      charge: this.charge,
-      location: this.location,
-      year: this.year,
-      month: this.month,
-      suspect: this.suspect,
-      gender: this.gender,
-      age: this.age,
-      notes: this.notes
-    })
-    .then((response) => {
-      console.log('CrimeForm -> sendRequest success');
-      console.log(response.data);
-      this.loading = false;
-      this.update = true;
-      this.reset();
-      this.$emit('created');
-    })
-    .catch((error) => {
-      console.error('CrimeForm-> sendRequest error');
-      // show an error message
-    });
-  },
-  reset () {
-      this.charge = '';
-      this.location = '';
-      this.year = '';
-      this.month = '';
-      this.suspect = '';
-      this.gender = '';
-      this.age = '';
-      this.notes = '';
+      //New crime posts are sent to database
+      axios.post('/crimes', {
+        charge: this.charge,
+        location: this.location,
+        year: this.year,
+        month: this.month,
+        suspect: this.suspect,
+        gender: this.gender,
+        age: this.age,
+        notes: this.notes
+      })
+
+      .then((response) => {
+        console.log('CrimeForm -> sendRequest success');
+        console.log(response.data);
+        this.loading = false;
+        this.update = true;
+        this.reset();
+        this.$emit('created');
+      })
+
+      .catch((error) => {
+        console.error('CrimeForm-> sendRequest error');
+      });
+
+    },
+
+    reset () {
+      //clears out form inputs 
+        this.charge = '';
+        this.location = '';
+        this.year = '';
+        this.month = '';
+        this.suspect = '';
+        this.gender = '';
+        this.age = '';
+        this.notes = '';
     }
   }
 }

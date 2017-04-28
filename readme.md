@@ -1,40 +1,40 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+## New York Crime Reporter API
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+New York is a big city, and many people are worried about certain areas and their level of safety. With this crime reporter, citizens can report crimes and update current ones if it has occurred multiple times. The crimes can also be deleted if needed. Users can also see data about crime in NYC and see the trend of decreased crimes.
 
-## About Laravel
+Using Laravel as a framework, I created this application using Vue.js and PHP and users can access the required database through AJAX requests.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+## Documentation
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+https://madisonwalls.gitbooks.io/new-york-city-crime/content/
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+## Required Programs
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+- Terminal
+- Composer https://getcomposer.org/download/
+- MAMP https://www.mamp.info/
+- Laravel https://laravel.com/docs/5.4#installing-laravel
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+## How to Set Up the Website
 
-## Contributing
+1. Clone this repository
+2. Using MAMP, change the 'Web Server' option under 'Preferences' to the public folder of 'laravel-vue-new-york-api'.
+3. Change the port 8888
+4. Start the Server
+5. Open the WebStart page and navigate to http://localhost:8888/phpMyAdmin
+6. Create a new database called 'app'
+7. Using terminal, cd into the location of the downloaded repository
+8. Run: php artisan migrate
+9. Run: npm install
+10. Run: npm run dev
+11. Start using the site at http://localhost:8888!
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+<img src="/img/homepage.png">
 
-## Security Vulnerabilities
+## Credits
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Creator:
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+ Madison Walls:
+ http://www.madisonwalls.org

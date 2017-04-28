@@ -1,13 +1,10 @@
 <template>
   <div>
-    <div class="col-sm-6 chart">
+    <div class="col-sm-8 col-sm-offset-2 chart">
       <p>Crimes Committed by Year</p>
       <div id="chart"></div>
     </div>
   </div>
-
-
-
 </template>
 
 <script>
@@ -25,6 +22,8 @@ export default {
   },
 
   mounted () {
+
+    //Data information for line graph
     var chart = window.c3.generate({
     bindto: '#chart',
 
@@ -39,8 +38,6 @@ export default {
     colors: {
             Index: '#FFD00D'
         },
-
-
     },
     axis: {
       y: {
@@ -59,7 +56,6 @@ export default {
             format: '%Y'
         },
       },
-
     }
   });
   },
@@ -100,6 +96,8 @@ g.c3-legend-item.c3-legend-item-Index text {
 .chart p {
   color: #ffffff;
   text-align: center;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 </style>

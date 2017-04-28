@@ -17,9 +17,11 @@ Route::get('/', function () {
     return view('app');
 });
 
-
+//Crime collection routes
 Route::get('/crimes', 'CrimeController@index');
 Route::post('/crimes', 'CrimeController@create');
+
+//Crime Singular routes
 Route::get('/crimes/{id}', 'CrimeController@show');
 Route::put('/crimes/{id}', 'CrimeController@update');
 Route::delete('/crimes/{id}', 'CrimeController@destroy');

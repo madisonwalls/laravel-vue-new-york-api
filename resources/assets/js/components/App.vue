@@ -1,31 +1,44 @@
 <template>
+<!-- App that writes all the components out to the index file -->
+
   <div class="container-fluid main-page">
+
     <div class="header">
-    <div class="row">
-      <div class="col-sm-12 title">
-          <h1>New York City </br> Crime Reporter</h1>
-      </div>
-    </div>
-    <Mapchart></Mapchart>
       <div class="row">
-        <div class="col-sm-5 col-sm-offset-1 info">
-            <p>NYC is a large and exciting city, but it can sometimes be dangerous as well. This site lets you report a crime that you know about, along with some important information to help keep the streets safe. Start by adding a new crime, or view the currently listed crimes below.</p>
-            <a href="#CrimeForm"><button class="alert-crime">Report Crime Now</button></a>
-          </div>
+        <div class="col-sm-12 title">
+          <h1>New York City </br> Crime Reporter</h1>
+        </div>
       </div>
-    <Navigation></Navigation>
-  </div>
-    <CrimeForm id="CrimeForm" @created="fetch"></CrimeForm>
+
+      <div class="row">
+        <div class="col-sm-5 col-sm-offset-7 info">
+          <p>NYC is a large and exciting city, but it can sometimes be dangerous as well. This site lets you report a crime that you know about, along with some important information to help keep the streets safe. Start by adding a new crime, or view the currently listed crimes below.</p>
+          <a href="#CrimeForm"><button class="alert-crime">Report Crime Now</button></a>
+          <a href="#CrimeList"><button class="alert-crime">View Reported Crimes</button></a>
+        </div>
+        <Mapchart class="Mapchart"></Mapchart>
+      </div>
+
+      <Navigation></Navigation>
+
+    </div>
+
+<!-- End of Opening Header Section -->
+
+      <CrimeForm id="CrimeForm" @created="fetch"></CrimeForm>
       <div class="col-sm-12 CrimeList">
         <h1 id="CrimeList">Crime List</h1>
           <div v-show="removeCrime" class="remove-message">
             <p><strong>Crime Removed. </strong>The crime is no longer on this list.</p>
           </div>
-          <Crime v-for="(form, index) in crimes" :key="index" :crime="form" @updated="update" @deleted="remove(index)"></Crime>
+        <Crime v-for="(form, index) in crimes" :key="index" :crime="form" @updated="update" @deleted="remove(index)"></Crime>
+        <p v-show="crimes.length === 0">There are currently no crimes recorded. Be the first to add one by clicking <a href="#CrimeForm">here.</a></p>
       </div>
+
     <div class="col-sm-10 col-sm-offset-1">
       <Mapinteractive></Mapinteractive>
     </div>
+
     <PieGraphs class="pie-graphs"></PieGraphs>
     <Styleguide id="StyleGuide" class="styleguide"></Styleguide>
     <Credits class="credits-fluid"></Credits>
@@ -71,6 +84,7 @@ export default {
   methods: {
 
     fetch() {
+      //retrieves all the crimes in the mySQL database "app"
       console.log('App -> fetch');
       this.loading = true;
       axios.get('/crimes')
@@ -78,14 +92,13 @@ export default {
         console.log('App -> fetch success');
         console.log(response.data);
         this.crimes = response.data;
-        //ADD A SUCCESS MESSAGE
       })
       .catch((response) => {
         console.log('App -> fetch error');
-        //ADD AN ERROR MESSAGE
       })
     },
 
+    //Saves edited information and updates it
     update (data) {
       var i = this.crimes.indexOf(data.crime);
       for (var d in data) {
@@ -95,6 +108,7 @@ export default {
       }
     },
 
+    //deletes a specific crime from the array
     remove (i) {
       console.log(`App -> Remove ID: ${i}`);
       this.crimes.splice(i,1);
@@ -115,13 +129,13 @@ export default {
 
 .title h1 {
   font-family: NewYork;
-  font-size: 80px;
+  font-size: 90px;
   display: block;
   vertical-align: middle;
-  padding-left: 40px;
+  padding-left: 60px;
   color: #FFDB0D;
-  margin-bottom: 100px;
-  margin-top: 20px;
+  margin-bottom: 70px;
+  margin-top: 45px;
 }
 
 .title img {
@@ -166,12 +180,13 @@ export default {
 .alert-crime {
   border: solid 3px #FFDB0D;
   background-color: rgba(0, 0, 0, 0);
-  padding: 15px 45px;
+  padding: 15px 25px;
   margin-left: 30px;
   border-radius: 5px;
   color: #FFDB0D;
   margin-bottom: 40px;
   transition: all 0.4s ease-in-out;
+  display: inline-block;
 
 }
 
@@ -220,14 +235,25 @@ h1#CrimeList {
   margin-bottom: 80px;
 }
 
+.CrimeList p {
+  text-align: center;
+  font-family: source sans pro;
+}
+
 @media screen and (max-width: 560px) {
 
 .title h1 {
   font-size: 50px;
+  padding: 25px;
+  margin-bottom: 30px;
 }
 
 .styleguide {
   padding: 15px;
+}
+
+.Mapchart {
+  display: none;
 }
 
 }

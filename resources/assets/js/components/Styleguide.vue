@@ -5,13 +5,15 @@
       <div class="col-md-12 style-title">
         <h2>Style Guide</h2>
       </div>
-      </div>
+    </div>
   </div>
+
   <div class="container">
     <div class="row">
       <div class="col-md-4 category">
         <h2>Colors</h2>
       </div>
+
       <div class="col-md-8">
         <div class="color1"><p>Cotton #AED0E5</p></div>
         <div class="color2"><p>Bluebell #3FA7D3</p></div>
@@ -29,37 +31,41 @@
         <div class="color11"><p>Wired #999999</p></div>
         <div class="color12"><p>Night #000000</p></div>
       </div>
+
     </div>
   </div>
+
   <div class="container">
     <div class="row">
+
       <div class="col-md-4 category">
         <h2>Typography</h2>
       </div>
+
       <div class="col-md-8 text">
         <p class="font-thin">Source Sans Pro Thin</p>
         <p class="font-regular">Source Sans Pro Regular</p>
         <p class="font-bold">Source Sans Pro Bold</p>
         <h1 class="main-header">Main Header - Poire Tone Regular</h1>
         <h2 class="stand-out-header">Stand Out Header - Source Sans Pro Thin</h2>
-
         <h1>Heading 1 - Poire Tone Regular</h1>
         <h2>Heading 2 - Source Sans Pro</h2>
         <h3>Heading 3 - Source Sans Pro</h3>
         <h4>Heading 4 - Source Sans Pro</h4>
         <h5>Heading 5 - Source Sans Pro</h5>
         <h6>Heading 6 - Source Sans Pro</h6>
-          <p class="paragraphs">Paragraph Text</p>
-          <p class="paragraphs">This website lets you store information about the crimes you've visited in New York City. Making it easier to recontact them or to check what crimes you haven't tried yet.</p>
-          <p class="paragraphs">The benefits of this application are endless, and the style is sleek and clean with an inviting color scheme.</p>
-          <p class="light-text">p.light-text</p>
-          <p class="light-text">This website lets you store information about the crimes you've visited in New York City. Making it easier to recontact them or to check what crimes you haven't tried yet.</p>
-          <p class="light-text">The benefits of this application are endless, and the style is sleek and clean with an inviting color scheme.</p>
-          <p class="lead-text">p.lead-text</p>
-          <p class="lead-text">This website lets you store information about the crimes you've visited in New York City. Making it easier to recontact them or to check what crimes you haven't tried yet.</p>
-          <p class="lead-text">The benefits of this application are endless, and the style is sleek and clean with an inviting color scheme.</p>
-        </div>
+        <p class="paragraphs">Paragraph Text</p>
+        <p class="paragraphs">This website lets you store information about the crimes you've visited in New York City. Making it easier to recontact them or to check what crimes you haven't tried yet.</p>
+        <p class="paragraphs">The benefits of this application are endless, and the style is sleek and clean with an inviting color scheme.</p>
+        <p class="light-text">p.light-text</p>
+        <p class="light-text">This website lets you store information about the crimes you've visited in New York City. Making it easier to recontact them or to check what crimes you haven't tried yet.</p>
+        <p class="light-text">The benefits of this application are endless, and the style is sleek and clean with an inviting color scheme.</p>
+        <p class="lead-text">p.lead-text</p>
+        <p class="lead-text">This website lets you store information about the crimes you've visited in New York City. Making it easier to recontact them or to check what crimes you haven't tried yet.</p>
+        <p class="lead-text">The benefits of this application are endless, and the style is sleek and clean with an inviting color scheme.</p>
       </div>
+
+    </div>
   </div>
 
   <div class="container">
@@ -81,23 +87,24 @@
         <h2>Lists</h2>
       </div>
       <div class="col-md-8">
-      <ul>
-       <li>This is an example of a list item.</li>
-       <li>Another chance to see what a list item looks like.</li>
-       <li>For example purposes, here is a list item.</li>
-       <li>This is the styleguide for a New York Crime Website.</li>
-       <li>Here is the last example on this list.</li>
-     </ul>
-     <ol>
-        <li>This is an example of a list item.</li>
-        <li>Another chance to see what a list item looks like.</li>
-        <li>For example purposes, here is a list item.</li>
-        <li>This is the styleguide for a New York Crime Website.</li>
-        <li>Here is the last example on this list.</li>
-    </ol>
-      </div>
+        <ul>
+          <li>This is an example of a list item.</li>
+          <li>Another chance to see what a list item looks like.</li>
+          <li>For example purposes, here is a list item.</li>
+          <li>This is the styleguide for a New York Crime Website.</li>
+          <li>Here is the last example on this list.</li>
+        </ul>
+       <ol>
+          <li>This is an example of a list item.</li>
+          <li>Another chance to see what a list item looks like.</li>
+          <li>For example purposes, here is a list item.</li>
+          <li>This is the styleguide for a New York Crime Website.</li>
+          <li>Here is the last example on this list.</li>
+      </ol>
     </div>
+   </div>
   </div>
+
   <div class="container">
     <div class="row">
       <div class="col-md-4 category">
@@ -107,13 +114,14 @@
         <input class="inputField" type="text" name="" value="" placeholder="Example Input Field">
         <textarea class="textareaInput" type="text" name="" value="" placeholder="Example Text Area Field"></textarea>
         <select class="selectInput" type="text" name="" value="">
-         <option value="Example 1">Example 1</option>
-         <option value="Example 2">Example 2</option>
-         <option value="Example 3">Example 3</option>
-       </select>
-      </div>
+        <option value="Example 1">Example 1</option>
+        <option value="Example 2">Example 2</option>
+        <option value="Example 3">Example 3</option>
+        </select>
+     </div>
     </div>
   </div>
+  
 </div>
 
 

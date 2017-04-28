@@ -1,26 +1,30 @@
 <template>
   <div class="container-fluid">
     <div class="row">
+
       <a href="#CrimeForm">
       <div class="col-sm-3 nav-function-1">
         <h2>Add New Crime</h2>
       </div>
-    </a>
-    <a href="#CrimeList">
+      </a>
+
+      <a href="#CrimeList">
       <div class="col-sm-3 nav-function-2">
         <h2>List All Crimes</h2>
       </div>
-    </a>
-    <a href="#StyleGuide">
+      </a>
+
+      <a href="#StyleGuide">
       <div class="col-sm-3 nav-function-3">
         <h2>Style Guide</h2>
       </div>
-    </a>
-    <a target="_blank" href="https://madisonwalls.gitbooks.io/new-york-city-crime/content/">
+      </a>
+
+      <a target="_blank" href="https://madisonwalls.gitbooks.io/new-york-city-crime/content/">
       <div class="col-sm-3 nav-function-4">
         <h2>API Documentation</h2>
       </div>
-    </a>
+      </a>
 
     </div>
   </div>
