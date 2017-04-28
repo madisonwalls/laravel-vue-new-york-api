@@ -30,7 +30,7 @@ https://madisonwalls.gitbooks.io/new-york-city-crime/content/
 10. Run: npm run dev
 11. Start using the site at http://localhost:8888!
 
-<img src="/img/homepage.png">
+<img src="/public/img/homepage.png">
 
 ## Credits
 
