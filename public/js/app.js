@@ -22043,6 +22043,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 
@@ -22467,6 +22468,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
+//
 //
 //
 //
@@ -37160,21 +37162,21 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (windo
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)();
-exports.push([module.i, "\n@font-face {\n  font-family: NewYork;\n  src: url("+__webpack_require__(5)+");\n}\n.title h1 {\n  font-family: NewYork;\n  font-size: 80px;\n  display: block;\n  vertical-align: middle;\n  padding-left: 40px;\n  color: #FFDB0D;\n  margin-bottom: 100px;\n  margin-top: 20px;\n}\n.title img {\n  display: block;\n  margin: auto;\n}\n.title {\n  display: block;\n  padding-bottom: 50px;\n}\n.info p {\n  font-family: Source Sans Pro;\n  font-weight: lighter;\n  font-size: 18px;\n  color: #ffffff;\n  padding: 30px;\n}\n#app {\n  background-color: #ffffff;\n}\n.container-fluid.main-page {\n  padding: 0px;\n  background-color: #ffffff;\n}\n.header {\n  background-image: url(\"/img/nyskyline.jpg\");\n  background-position: center;\n  background-size: cover;\n}\n.alert-crime {\n  border: solid 3px #FFDB0D;\n  background-color: rgba(0, 0, 0, 0);\n  padding: 15px 45px;\n  margin-left: 30px;\n  border-radius: 5px;\n  color: #FFDB0D;\n  margin-bottom: 40px;\n  transition: all 0.4s ease-in-out;\n}\n.alert-crime:hover {\n  background-color: #FFDB0D;\n  color: #3B3B3B;\n  transition: all 0.4s ease-in-out;\n}\n.CrimeList-fluid h1 {\n  font-family: NewYork;\n  text-align: center;\n  font-size: 50px;\n  margin-bottom: 30px;\n}\n.CrimeList-fluid {\n  background-color: #F0F0F0;\n  padding: 0px;\n}\n.styleguide {\n  background-color: #F0F0F0;\n  padding: 30px;\n}\n.credits-fluid {\n  background-color: #052F57;\n  color: white;\n  margin: 0px;\n  padding: 50px;\n}\n.remove-message {\n  background-color:#0A67BD;\n  padding: 10px 20px;\n  border-radius: 5px;\n  border-left: #052F57 8px solid;\n  width: 25%;\n  margin: 20px auto;\n  color: #ffffff;\n  transition: all 0.4s ease-in-out;\n}\n@media screen and (max-width: 560px) {\n.title h1 {\n  font-size: 50px;\n}\n.styleguide {\n  padding: 15px;\n}\n}\n\n", ""]);
+exports.push([module.i, "\n@font-face {\n  font-family: NewYork;\n  src: url("+__webpack_require__(5)+");\n}\n.title h1 {\n  font-family: NewYork;\n  font-size: 80px;\n  display: block;\n  vertical-align: middle;\n  padding-left: 40px;\n  color: #FFDB0D;\n  margin-bottom: 100px;\n  margin-top: 20px;\n}\n.title img {\n  display: block;\n  margin: auto;\n}\n.title {\n  display: block;\n  padding-bottom: 50px;\n}\n.info p {\n  font-family: Source Sans Pro;\n  font-weight: lighter;\n  font-size: 18px;\n  color: #ffffff;\n  padding: 0px 30px;\n}\n.info {\n  margin-top: 100px;\n}\n#app {\n  background-color: #ffffff;\n}\n.container-fluid.main-page {\n  padding: 0px;\n  background-color: #ffffff;\n}\n.header {\n  background-image: url(\"/img/nyskyline.jpg\");\n  background-position: center;\n  background-size: cover;\n}\n.alert-crime {\n  border: solid 3px #FFDB0D;\n  background-color: rgba(0, 0, 0, 0);\n  padding: 15px 45px;\n  margin-left: 30px;\n  border-radius: 5px;\n  color: #FFDB0D;\n  margin-bottom: 40px;\n  transition: all 0.4s ease-in-out;\n}\n.alert-crime:hover {\n  background-color: #FFDB0D;\n  color: #3B3B3B;\n  transition: all 0.4s ease-in-out;\n}\nh1#CrimeList {\n  font-family: NewYork;\n  text-align: center;\n  font-size: 50px;\n  margin-bottom: 30px;\n}\n.CrimeList {\n  background-color: #F0F0F0;\n  padding: 0px;\n}\n.styleguide {\n  background-color: #F0F0F0;\n  padding: 30px;\n}\n.credits-fluid {\n  background-color: #052F57;\n  color: white;\n  margin: 0px;\n  padding: 50px;\n}\n.remove-message {\n  background-color:#0A67BD;\n  padding: 10px 20px;\n  border-radius: 5px;\n  border-left: #052F57 8px solid;\n  width: 25%;\n  margin: 20px auto;\n  color: #ffffff;\n  transition: all 0.4s ease-in-out;\n}\n.pie-graphs {\n  margin-bottom: 80px;\n}\n@media screen and (max-width: 560px) {\n.title h1 {\n  font-size: 50px;\n}\n.styleguide {\n  padding: 15px;\n}\n}\n\n", ""]);
 
 /***/ }),
 /* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)();
-exports.push([module.i, "\n.tool > i {\n  margin-right: 10px;\n  color: #ffffff;\n  display: inline-block;\n}\n.tool > i:hover {\n  margin-right: 10px;\n  color: #FFDB0D;\n  display: inline-block;\n}\n.tool > a {\n  text-align: right;\n}\n.body-crime {\n  border: 1px solid #ccc;\n  border-left: 12px solid #052F57;\n  border-radius: 10px;\n  border-top-left-radius: 0px;\n  border-top-right-radius: 0px;\n  margin: 0px;\n  margin-left: 72px;\n  padding: 20px;\n  border-top: none;\n}\n.CrimeList-fluid {\n  display: inline-block;\n  padding: 50px 0px;\n}\n.card-body h1 {\n  color: #ffffff;\n  font-family: source sans pro;\n  font-weight: lighter;\n  font-size: 30px;\n  margin-bottom: 5px;\n}\n.body-crime{\n  margin: auto;\n  width: 90%;\n}\n.editing input {\n  width: 85%;\n  padding: 10px 50px 10px 8px;\n  font-family: source sans pro;\n  font-size: 16px;\n  border: 2px solid #0A67BD;\n  border-radius: 4px;\n  margin: 10px;\n}\n.editing {\n  border: 1px solid #ccc;\n  border-radius: 10px;\n  margin: 0px;\n  padding: 20px;\n  padding-bottom: 55px;\n  margin: auto;\n  width: 90%;\n  border-left: 8px solid #052F57;\n}\n.editing p {\n  margin-bottom: 0px;\n  margin-top: 15px;\n}\n.crime-card p {\n  font-family: source sans pro;\n}\n.save {\n  border: 4px solid green;\n  padding: 5px 20px;\n  border-radius: 4px;\n  margin-right: 10px;\n  background-color: #052F57;\n  float: left;\n  color: #ffffff;\n  font-size: 14px;\n}\n.save:hover {\n  background-color: green;\n  color: #ffffff;\n  border: 4px solid #0A67BD;\n  transition: all 0.4s ease-in-out;\n}\n.cancel {\n  border: 4px solid #0A67BD;\n  padding: 5px 20px;\n  border-radius: 4px;\n  margin-right: 10px;\n  background-color: #052F57;\n  float: right;\n  color: #ffffff;\n  font-size: 14px;\n}\n.cancel:hover {\n  background-color: #0A67BD;\n  color: #ffffff;\n  border: 4px solid #0A67BD;\n  transition: all 0.4s ease-in-out;\n}\n.edit-icon {\n  float: right;\n  margin-bottom: 5px;\n  background-color: #052F57;\n  border-radius: 4px;\n  padding: 5px 10px;\n}\n.remove-icon {\n  float: right;\n  margin-bottom: 5px;\n  background-color: #052F57;\n  border-radius: 4px;\n  padding: 5px 5px;\n  font-size: 20px;\n  position: relative;\n  top: 29px;\n  left: -23px;\n}\n.map-crime {\n  float: left;\n  margin-bottom: 5px;\n  background-color: #0A67BD;\n  border-radius: 4px;\n  padding: 5px 10px;\n}\n.crime-card a {\n  color: #ffffff;\n  display: inline-block;\n}\n.map-crime:hover {\n  background-color: #052F57;\n  display: inline-block;\n  text-decoration: none;\n  color: #ffffff;\n  transition: all 0.4s ease-in-out;\n}\n.edit-icon:hover {\n  color: #ffffff;\n  background-color: #0A67BD;\n  text-decoration: none;\n  transition: all 0.4s ease-in-out;\n}\n.crime-time {\n  text-align: center;\n  margin-bottom: 0px;\n  color: #ccc;\n  font-size: 15px;\n}\n.header-crime {\n  background-color: #052F57;\n  margin-bottom: 0px;\n  border: 1px solid #ccc;\n  border-radius: 10px;\n  margin: 0px;\n  padding: 20px;\n  margin: auto;\n  width: 90%;\n  border-bottom: none;\n  border-bottom-left-radius: 0px;\n  border-bottom-right-radius: 0px;\n  border-left: 8px solid #052F57;\n}\n\n\n\n", ""]);
+exports.push([module.i, "\n.tool > i {\n  margin-right: 10px;\n  color: #ffffff;\n  display: inline-block;\n}\n.tool > i:hover {\n  margin-right: 10px;\n  color: #FFDB0D;\n  display: inline-block;\n}\n.tool > a {\n  text-align: right;\n}\n.body-crime {\n  border: 1px solid #ccc;\n  border-left: 12px solid #052F57;\n  border-radius: 10px;\n  border-top-left-radius: 0px;\n  border-top-right-radius: 0px;\n  margin: 0px;\n  margin-left: 72px;\n  padding: 20px;\n  border-top: none;\n}\n.CrimeList {\n  display: block;\n  padding: 50px 0px;\n}\n.card-body h1 {\n  color: #ffffff;\n  font-family: source sans pro;\n  font-weight: lighter;\n  font-size: 30px;\n  margin-bottom: 5px;\n  text-align: center;\n}\n.body-crime{\n  margin: auto;\n  width: 90%;\n}\n.editing input {\n  width: 85%;\n  padding: 10px 50px 10px 8px;\n  font-family: source sans pro;\n  font-size: 16px;\n  border: 2px solid #0A67BD;\n  border-radius: 4px;\n  margin: 10px;\n}\n.editing {\n  border: 1px solid #ccc;\n  border-radius: 10px;\n  margin: 0px;\n  padding: 20px;\n  padding-bottom: 55px;\n  margin: auto;\n  width: 90%;\n  border-left: 8px solid #052F57;\n}\n.editing p {\n  margin-bottom: 0px;\n  margin-top: 15px;\n}\n.crime-card p {\n  font-family: source sans pro;\n}\n.save {\n  border: 4px solid green;\n  padding: 5px 20px;\n  border-radius: 4px;\n  margin-right: 10px;\n  background-color: #052F57;\n  float: left;\n  color: #ffffff;\n  font-size: 14px;\n}\n.save:hover {\n  background-color: green;\n  color: #ffffff;\n  border: 4px solid #0A67BD;\n  transition: all 0.4s ease-in-out;\n}\n.cancel {\n  border: 4px solid #0A67BD;\n  padding: 5px 20px;\n  border-radius: 4px;\n  margin-right: 10px;\n  background-color: #052F57;\n  float: right;\n  color: #ffffff;\n  font-size: 14px;\n}\n.cancel:hover {\n  background-color: #0A67BD;\n  color: #ffffff;\n  border: 4px solid #0A67BD;\n  transition: all 0.4s ease-in-out;\n}\n.edit-icon {\n  float: right;\n  margin-bottom: 5px;\n  background-color: #052F57;\n  border-radius: 4px;\n  padding: 5px 10px;\n}\n.remove-icon {\n  float: right;\n  margin-bottom: 5px;\n  background-color: #052F57;\n  border-radius: 4px;\n  padding: 5px 5px;\n  font-size: 20px;\n  position: relative;\n  top: 29px;\n  left: -23px;\n}\n.map-crime {\n  float: left;\n  margin-bottom: 5px;\n  background-color: #0A67BD;\n  border-radius: 4px;\n  padding: 5px 10px;\n}\n.crime-card a {\n  color: #ffffff;\n  display: inline-block;\n}\n.map-crime:hover {\n  background-color: #052F57;\n  display: inline-block;\n  text-decoration: none;\n  color: #ffffff;\n  transition: all 0.4s ease-in-out;\n}\n.edit-icon:hover {\n  color: #ffffff;\n  background-color: #0A67BD;\n  text-decoration: none;\n  transition: all 0.4s ease-in-out;\n}\n.crime-time {\n  text-align: center;\n  margin-bottom: 0px;\n  color: #ccc;\n  font-size: 15px;\n}\n.header-crime {\n  background-color: #052F57;\n  margin-bottom: 0px;\n  border: 1px solid #ccc;\n  border-radius: 10px;\n  margin: 0px;\n  padding: 20px;\n  margin: auto;\n  width: 90%;\n  border-bottom: none;\n  border-bottom-left-radius: 0px;\n  border-bottom-right-radius: 0px;\n  border-left: 8px solid #052F57;\n}\n\n\n\n", ""]);
 
 /***/ }),
 /* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)();
-exports.push([module.i, "\npath.c3-shape.c3-arc.c3-arc-Other {\n  fill:  #052F57 !important;\n}\npath:hover.c3-shape.c3-arc.c3-arc-Other{\n  fill:  #FFDB0D !important;\n}\npath.c3-shape.c3-arc.c3-arc-Drugs {\n  fill:  #0A67BD !important;\n}\npath:hover.c3-shape.c3-arc.c3-arc-Drugs{\n  fill:  #FFDB0D !important;\n}\npath.c3-shape.c3-arc.c3-arc-Male {\n  fill:  #052F57 !important;\n}\npath:hover.c3-shape.c3-arc.c3-arc-Male{\n  fill:  #FFDB0D !important;\n}\npath.c3-shape.c3-arc.c3-arc-Female {\n  fill:  #0A67BD !important;\n}\npath:hover.c3-shape.c3-arc.c3-arc-Female{\n  fill:  #FFDB0D !important;\n}\ng.c3-legend-item.c3-legend-item-Drugs line.c3-legend-item-tile {\n  stroke:  #0A67BD !important;\n}\ng.c3-legend-item.c3-legend-item-Other line.c3-legend-item-tile {\n  stroke:  #052F57 !important;\n}\ng.c3-legend-item.c3-legend-item-Female line.c3-legend-item-tile {\n  stroke:  #0A67BD !important;\n}\ng.c3-legend-item.c3-legend-item-Male line.c3-legend-item-tile {\n  stroke:  #052F57 !important;\n}\n\n\n\n", ""]);
+exports.push([module.i, "\npath.c3-shape.c3-arc.c3-arc-Other {\n  fill:  #052F57 !important;\n}\npath:hover.c3-shape.c3-arc.c3-arc-Other{\n  fill:  #FFDB0D !important;\n}\npath.c3-shape.c3-arc.c3-arc-Drugs {\n  fill:  #0A67BD !important;\n}\npath:hover.c3-shape.c3-arc.c3-arc-Drugs{\n  fill:  #FFDB0D !important;\n}\npath.c3-shape.c3-arc.c3-arc-Male {\n  fill:  #052F57 !important;\n}\npath:hover.c3-shape.c3-arc.c3-arc-Male{\n  fill:  #FFDB0D !important;\n}\npath.c3-shape.c3-arc.c3-arc-Female {\n  fill:  #0A67BD !important;\n}\npath:hover.c3-shape.c3-arc.c3-arc-Female{\n  fill:  #FFDB0D !important;\n}\ng.c3-legend-item.c3-legend-item-Drugs line.c3-legend-item-tile {\n  stroke:  #0A67BD !important;\n}\ng.c3-legend-item.c3-legend-item-Other line.c3-legend-item-tile {\n  stroke:  #052F57 !important;\n}\ng.c3-legend-item.c3-legend-item-Female line.c3-legend-item-tile {\n  stroke:  #0A67BD !important;\n}\ng.c3-legend-item.c3-legend-item-Male line.c3-legend-item-tile {\n  stroke:  #052F57 !important;\n}\n.pie_text h3 {\n  font-family: source sans pro;\n  font-weight: lighter;\n  color: #3FA7D3;\n  font-size: 24px;\n  margin-top: 50px;\n}\n.pie_text p {\n  font-family: source sans pro;\n  font-size: 16px;\n}\n\n\n", ""]);
 
 /***/ }),
 /* 51 */
@@ -37188,14 +37190,14 @@ exports.push([module.i, "\n@font-face {\n  font-family: NewYork;\n  src: url("+_
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)();
-exports.push([module.i, "\n.st0{fill:#515151;\n}\n.st1{fill:#B5B5B5;\n}\n.st2{fill:#3D3D3D;\n}\n.st3{fill:#ACE1FA;\n}\n.st4{fill:#6D6D6D;\n}\n.st5{fill:#8E8E8E;\n}\n.st6{fill:#414142;\n}\n.st7{fill:none;\n}\n.st8{font-family:'MyriadPro-Regular';\n}\n.st9{font-size:12px;\n}\n.st10{fill:#FFFFFF;\n}\n.st11{fill:#231F20;\n}\npath:hover {\n\n      background-color: #FFDB0D;\n      fill: #FFDB0D !important;\n}\npolygon:hover {\n\n          background-color: #FFDB0D;\n            fill: #FFDB0D;\n}\n@font-face {\n    font-family: NewYork;\n    src: url("+__webpack_require__(5)+");\n}\n.crime-text h1 {\n\n    font-family: NewYork;\n    text-align: center;\n    font-size: 50px;\n    margin-top: 120px;\n}\n.crime-text p {\n  font-family: source sans pro;\n  text-align: center;\n}\n\n\n\n", ""]);
+exports.push([module.i, "\n.st0{fill:#515151;\n}\n.st1{fill:#B5B5B5;\n}\n.st2{fill:#3D3D3D;\n}\n.st3{fill:#ACE1FA;\n}\n.st4{fill:#6D6D6D;\n}\n.st5{fill:#8E8E8E;\n}\n.st6{fill:#414142;\n}\n.st7{fill:none;\n}\n.st8{font-family:'MyriadPro-Regular';\n}\n.st9{font-size:12px;\n}\n.st10{fill:#FFFFFF;\n}\n.st11{fill:#231F20;\n}\npath:hover {\n\n      background-color: #FFDB0D;\n      fill: #FFDB0D !important;\n}\npolygon:hover {\n\n          background-color: #FFDB0D;\n            fill: #FFDB0D;\n}\n@font-face {\n    font-family: NewYork;\n    src: url("+__webpack_require__(5)+");\n}\n.crime-text h1 {\n\n    font-family: NewYork;\n    text-align: center;\n    font-size: 50px;\n    margin-top: 120px;\n    color: #3FA7D3;\n}\n.crime-text p {\n  font-family: source sans pro;\n  text-align: center;\n}\n\n\n\n", ""]);
 
 /***/ }),
 /* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(3)();
-exports.push([module.i, "\ntext.c3-axis-y-label {\n  color: #ffffff;\n}\n\n\n", ""]);
+exports.push([module.i, "\npath.c3-shape.c3-line.c3-line-Index {\n  fill: none;\n}\n.c3 .c3-axis-x path, .c3 .c3-axis-x line {\n    stroke: white;\n    fill: white;\n}\n.c3 .c3-axis-y path, .c3 .c3-axis-y line {\n    stroke: white;\n    fill: white;\n}\n.c3 .c3-axis-y text {\n    fill: white;\n}\n.c3 .c3-axis-x text {\n    fill: white;\n}\ng.c3-legend-item.c3-legend-item-Index text {\n  fill: white;\n}\n.chart p {\n  color: #ffffff;\n  text-align: center;\n}\n\n", ""]);
 
 /***/ }),
 /* 54 */
@@ -54695,7 +54697,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "container-fluid main-page"
   }, [_c('div', {
     staticClass: "header"
-  }, [_vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('Navigation')], 1), _vm._v(" "), _c('CrimeForm', {
+  }, [_vm._m(0), _vm._v(" "), _c('Mapchart'), _vm._v(" "), _vm._m(1), _vm._v(" "), _c('Navigation')], 1), _vm._v(" "), _c('CrimeForm', {
     attrs: {
       "id": "CrimeForm"
     },
@@ -54703,7 +54705,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "created": _vm.fetch
     }
   }), _vm._v(" "), _c('div', {
-    staticClass: "col-sm-12 CrimeList-fluid"
+    staticClass: "col-sm-12 CrimeList"
   }, [_c('h1', {
     attrs: {
       "id": "CrimeList"
@@ -54729,7 +54731,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         }
       }
     })
-  })], 2), _vm._v(" "), _c('Mapinteractive'), _vm._v(" "), _c('PieGraphs'), _vm._v(" "), _c('Styleguide', {
+  })], 2), _vm._v(" "), _c('Mapinteractive'), _vm._v(" "), _c('PieGraphs', {
+    staticClass: "pie-graphs"
+  }), _vm._v(" "), _c('Styleguide', {
     staticClass: "styleguide",
     attrs: {
       "id": "StyleGuide"
@@ -54747,10 +54751,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', {
     staticClass: "row"
   }, [_c('div', {
-    staticClass: "col-sm-5 col-sm-offset-7 info"
-  }, [_c('p', [_vm._v("NYC is a large and exciting city, but it can sometimes be dangerous as well. This site lets you report a crime that you know about, along with some important information to help keep the streets safe. Start by adding a new crime, or view the currently listed crimes below.")]), _vm._v(" "), _c('button', {
+    staticClass: "col-sm-5 col-sm-offset-1 info"
+  }, [_c('p', [_vm._v("NYC is a large and exciting city, but it can sometimes be dangerous as well. This site lets you report a crime that you know about, along with some important information to help keep the streets safe. Start by adding a new crime, or view the currently listed crimes below.")]), _vm._v(" "), _c('a', {
+    attrs: {
+      "href": "#CrimeForm"
+    }
+  }, [_c('button', {
     staticClass: "alert-crime"
-  }, [_vm._v("Report Crime Now")])])])
+  }, [_vm._v("Report Crime Now")])])])])
 },function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('p', [_c('strong', [_vm._v("Crime Removed")])])
 }]}
@@ -59097,11 +59105,9 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _vm._m(0)
 },staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', {
-    staticClass: "container"
-  }, [_c('div', {
-    staticClass: "col-xs-12"
-  }, [_c('div', {
+  return _c('div', [_c('div', {
+    staticClass: "col-sm-6 chart"
+  }, [_c('p', [_vm._v("Crimes Committed by Year")]), _vm._v(" "), _c('div', {
     attrs: {
       "id": "chart"
     }

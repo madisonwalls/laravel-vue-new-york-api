@@ -18,12 +18,14 @@
     <CrimeForm id="CrimeForm" @created="fetch"></CrimeForm>
       <div class="col-sm-12 CrimeList">
         <h1 id="CrimeList">Crime List</h1>
-        <div v-show="removeCrime" class="remove-message">
-            <p><strong>Crime Removed</strong></p>
+          <div v-show="removeCrime" class="remove-message">
+            <p><strong>Crime Removed. </strong>The crime is no longer on this list.</p>
           </div>
           <Crime v-for="(form, index) in crimes" :key="index" :crime="form" @updated="update" @deleted="remove(index)"></Crime>
       </div>
-    <Mapinteractive></Mapinteractive>
+    <div class="col-sm-10 col-sm-offset-1">
+      <Mapinteractive></Mapinteractive>
+    </div>
     <PieGraphs class="pie-graphs"></PieGraphs>
     <Styleguide id="StyleGuide" class="styleguide"></Styleguide>
     <Credits class="credits-fluid"></Credits>
@@ -160,6 +162,7 @@ export default {
   background-size: cover;
 }
 
+
 .alert-crime {
   border: solid 3px #FFDB0D;
   background-color: rgba(0, 0, 0, 0);
@@ -207,7 +210,7 @@ h1#CrimeList {
   padding: 10px 20px;
   border-radius: 5px;
   border-left: #052F57 8px solid;
-  width: 25%;
+  width: 75%;
   margin: 20px auto;
   color: #ffffff;
   transition: all 0.4s ease-in-out;

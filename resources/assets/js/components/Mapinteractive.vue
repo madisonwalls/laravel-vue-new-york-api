@@ -3729,6 +3729,7 @@ export default {
     text-align: center;
     font-size: 50px;
     margin-top: 120px;
+    color: #3FA7D3;
   }
 
 .crime-text p {
