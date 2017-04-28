@@ -8,6 +8,7 @@
     </head>
 
     <body>
+      <!--App component that displays front-end -->
         <div id="app"></div>
 
         <script>
