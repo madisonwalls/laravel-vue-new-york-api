@@ -27,11 +27,11 @@ https://madisonwalls.gitbooks.io/new-york-city-crime/content/
 </br>
 <img src="/public/img/database.png">
 </br>
-7. Using terminal, cd into the location of the downloaded repository
-8. Run: php artisan migrate
-9. Run: npm install
-10. Run: npm run dev
-11. Start using the site at http://localhost:8888!
+7. Using terminal, cd into the location of the downloaded repository </br>
+8. Run: php artisan migrate </br>
+9. Run: npm install </br>
+10. Run: npm run dev </br>
+11. Start using the site at http://localhost:8888! </br>
 
 <img src="/public/img/homepage.png">
 
