@@ -24,6 +24,7 @@ https://madisonwalls.gitbooks.io/new-york-city-crime/content/
 4. Start the Server
 5. Open the WebStart page and navigate to http://localhost:8888/phpMyAdmin
 6. Create a new database called 'app'
+<img src="/public/img/homepage.png">
 7. Using terminal, cd into the location of the downloaded repository
 8. Run: php artisan migrate
 9. Run: npm install
